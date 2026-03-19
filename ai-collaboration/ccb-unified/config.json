@@ -1,0 +1,104 @@
+{
+  "gateway": {
+    "url": "http://localhost:8765",
+    "timeout": 300,
+    "retry_attempts": 3
+  },
+  "providers": {
+    "fast": ["kimi", "qwen"],
+    "medium": ["deepseek", "iflow", "opencode", "claude"],
+    "slow": ["codex", "gemini"],
+    "coding": ["qwen", "deepseek", "codex", "kimi", "gemini"],
+    "chinese": ["kimi", "qwen", "deepseek"],
+    "reasoning": ["codex", "deepseek", "kimi"],
+    "all": ["kimi", "qwen", "deepseek", "iflow", "opencode", "claude", "codex", "gemini", "droid"]
+  },
+  "subagents": {
+    "explore": {
+      "timeout": 120,
+      "thoroughness": "medium",
+      "model": "sonnet"
+    },
+    "bash": {
+      "timeout": 60,
+      "model": "haiku"
+    },
+    "plan": {
+      "timeout": 90,
+      "model": "sonnet"
+    },
+    "general-purpose": {
+      "timeout": 180,
+      "model": "sonnet"
+    }
+  },
+  "async": {
+    "default_wait": 30,
+    "poll_interval": 5,
+    "max_retries": 3,
+    "fast_provider_threshold": 15,
+    "slow_provider_threshold": 60
+  },
+  "parallel": {
+    "default_group": "@fast",
+    "max_concurrent": 5,
+    "wait_time": 30,
+    "stagger_delay": 1
+  },
+  "research": {
+    "default_analyzers": ["kimi", "qwen", "codex"],
+    "exploration_depth": "medium",
+    "report_format": "markdown",
+    "save_intermediates": true
+  },
+  "workflow": {
+    "error_handling": "continue",
+    "save_logs": true,
+    "log_dir": "~/.ccb/workflow_logs"
+  },
+  "memory": {
+    "auto_save": true,
+    "auto_importance": false,
+    "default_importance": 0.5
+  },
+  "benchmark": {
+    "iterations": 100,
+    "save_results": true,
+    "results_dir": "~/.ccb/benchmark_results"
+  },
+  "smart_routing": {
+    "enabled": true,
+    "rules": {
+      "frontend": {
+        "keywords": ["React", "Vue", "CSS", "前端", "UI", "HTML"],
+        "provider": "gemini",
+        "model": "3f"
+      },
+      "algorithm": {
+        "keywords": ["算法", "证明", "数学", "推理", "复杂度"],
+        "provider": "codex",
+        "model": "o3"
+      },
+      "review": {
+        "keywords": ["审查", "review", "安全", "检查"],
+        "provider": "codex",
+        "model": "o3"
+      },
+      "chinese": {
+        "keywords": ["翻译", "中文", "总结", "文案"],
+        "provider": "kimi",
+        "model": "normal"
+      },
+      "code": {
+        "keywords": ["实现", "代码", "Python", "编写", "函数"],
+        "provider": "qwen",
+        "model": "coder"
+      },
+      "fast": {
+        "keywords": ["快速", "简单", "问答", "解释"],
+        "provider": "kimi",
+        "model": "normal"
+      }
+    }
+  }
+}

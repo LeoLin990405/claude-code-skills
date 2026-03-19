@@ -1,0 +1,207 @@
+#!/usr/bin/env python3
+"""
+CDP AI Tools - 统一的本地 AI 应用交互工具
+支持豆包（Doubao）、阶跃AI（StepFun）和 Ollama
+"""
+
+import asyncio
+import json
+import sys
+import os
+from pathlib import Path
+
+# 添加 skill 目录到路径
+SCRIPT_PATH = Path(__file__).resolve()
+SKILL_DIR = Path.home() / ".claude" / "skills" / "cdp-ai-tools"
+LIB_DIR = SKILL_DIR / "lib"
+sys.path.insert(0, str(SKILL_DIR))
+sys.path.insert(0, str(LIB_DIR))
+
+# 导入控制器
+import importlib.util
+
+def load_module(name, path):
+    spec = importlib.util.spec_from_file_location(name, path)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+unified_cdp = load_module("unified_cdp", LIB_DIR / "unified_cdp.py")
+doubao_full = load_module("doubao_full_controller", SKILL_DIR / "doubao_full_controller.py")
+stepfun_full = load_module("stepfun_full_controller", SKILL_DIR / "stepfun_full_controller.py")
+ollama_ctrl = load_module("ollama_controller", SKILL_DIR / "ollama_controller.py")
+
+UnifiedCDP = unified_cdp.UnifiedCDP
+DoubaoFullController = doubao_full.DoubaoFullController
+StepFunFullController = stepfun_full.StepFunFullController
+OllamaController = ollama_ctrl.OllamaController
+
+
+async def main():
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description='CDP AI Tools - 本地 AI 应用交互工具',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+示例:
+  # 基本消息发送
+  ai-chat doubao "你好，请解释什么是递归"
+  ai-chat stepfun "你好，请解释什么是递归"
+  ai-chat ollama --model qwen2.5:7b "你好"
+
+  # 对话管理
+  ai-chat doubao --list-conversations
+  ai-chat doubao --switch 0
+  ai-chat doubao --delete 1
+  ai-chat doubao --rename 0 "新对话名称"
+
+  # 快捷操作
+  ai-chat doubao --quick-action "编程"
+
+  # 设置管理
+  ai-chat doubao --settings
+
+  # Ollama 特有功能
+  ai-chat ollama --list-models
+  ai-chat ollama --pull llama2
+  ai-chat ollama --generate qwen2.5:7b "解释递归"
+
+支持的 AI:
+  doubao  - 豆包 (端口 9225)
+  stepfun - 阶跃AI (端口 9224)
+  ollama  - Ollama (HTTP API)
+        """
+    )
+
+    parser.add_argument('ai', choices=['doubao', 'stepfun', 'ollama'],
+                        help='AI 应用标识符')
+    parser.add_argument('message', nargs='*', help='要发送的消息')
+
+    # 通用选项
+    parser.add_argument('--clear', action='store_true',
+                        help='对话结束后清理记录（默认保留对话）')
+    parser.add_argument('--timeout', type=int, default=60,
+                        help='超时时间（秒），默认60秒')
+
+    # 对话管理选项
+    parser.add_argument('--list-conversations', action='store_true',
+                        help='列出所有对话')
+    parser.add_argument('--switch', type=int, metavar='INDEX',
+                        help='切换到指定对话')
+    parser.add_argument('--delete', type=int, metavar='INDEX',
+                        help='删除指定对话')
+    parser.add_argument('--rename', nargs=2, metavar=('INDEX', 'NAME'),
+                        help='重命名对话')
+
+    # 快捷操作
+    parser.add_argument('--quick-action', type=str, metavar='NAME',
+                        help='点击快捷操作按钮')
+    parser.add_argument('--settings', action='store_true',
+                        help='打开设置面板')
+
+    # Ollama 特有选项
+    parser.add_argument('--model', type=str, default='qwen2.5:7b',
+                        help='Ollama 模型名称（默认: qwen2.5:7b）')
+    parser.add_argument('--list-models', action='store_true',
+                        help='[Ollama] 列出所有模型')
+    parser.add_argument('--show-model', type=str, metavar='NAME',
+                        help='[Ollama] 显示模型详情')
+    parser.add_argument('--pull', type=str, metavar='NAME',
+                        help='[Ollama] 拉取模型')
+    parser.add_argument('--generate', nargs=2, metavar=('MODEL', 'PROMPT'),
+                        help='[Ollama] 生成响应')
+    parser.add_argument('--stream', action='store_true',
+                        help='[Ollama] 流式输出')
+    parser.add_argument('--base-url', default='http://localhost:11434',
+                        help='[Ollama] API URL')
+
+    args = parser.parse_args()
+
+    # 处理 Ollama
+    if args.ai == 'ollama':
+        controller = OllamaController(base_url=args.base_url)
+        try:
+            await controller.connect()
+
+            if args.list_models:
+                result = await controller.list_models()
+                print(json.dumps(result, ensure_ascii=False, indent=2))
+
+            elif args.show_model:
+                result = await controller.show_model(args.show_model)
+                print(json.dumps(result, ensure_ascii=False, indent=2))
+
+            elif args.pull:
+                result = await controller.pull_model(args.pull)
+                print(json.dumps(result, ensure_ascii=False, indent=2))
+
+            elif args.generate:
+                model, prompt = args.generate
+                result = await controller.generate(model, prompt, stream=args.stream)
+                if not args.stream:
+                    print(json.dumps(result, ensure_ascii=False, indent=2))
+
+            elif args.message:
+                message = " ".join(args.message)
+                messages = [{"role": "user", "content": message}]
+                result = await controller.chat(args.model, messages, stream=args.stream)
+                if not args.stream:
+                    print(json.dumps(result, ensure_ascii=False, indent=2))
+
+            else:
+                parser.print_help()
+
+        finally:
+            await controller.close()
+        return
+
+    # 处理 Doubao 和 StepFun
+    if args.ai == 'doubao':
+        controller = DoubaoFullController(auto_clear=args.clear)
+    else:  # stepfun
+        controller = StepFunFullController(auto_clear=args.clear)
+
+    try:
+        await controller.connect()
+
+        # 对话管理功能
+        if args.list_conversations:
+            result = await controller.list_conversations()
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+
+        elif args.switch is not None:
+            result = await controller.switch_conversation(args.switch)
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+
+        elif args.delete is not None:
+            result = await controller.delete_conversation(args.delete)
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+
+        elif args.rename:
+            index, name = int(args.rename[0]), args.rename[1]
+            result = await controller.rename_conversation(index, name)
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+
+        elif args.settings:
+            result = await controller.open_settings()
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+
+        elif args.quick_action:
+            result = await controller.click_quick_action(args.quick_action)
+            print(json.dumps(result, ensure_ascii=False, indent=2))
+
+        elif args.message:
+            message = " ".join(args.message)
+            response = await controller.send_message(message, timeout=args.timeout)
+            print(response)
+
+        else:
+            parser.print_help()
+
+    finally:
+        await controller.close()
+
+
+if __name__ == "__main__":
+    asyncio.run(main())

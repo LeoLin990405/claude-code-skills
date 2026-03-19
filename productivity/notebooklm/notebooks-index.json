@@ -1,0 +1,1783 @@
+{
+  "notebooks": [
+    {
+      "index": 1,
+      "id": "802f621d-6f22-48e0-b9d4-9b421e2ecd11",
+      "title": "CS\u81ea\u5b66\u6307\u5357\uff1aEmacs\u4e0e\u8bfe\u7a0b\u8d44\u6e90\u603b\u6c47",
+      "is_owner": true,
+      "created_at": "2026-02-08T02:26:29"
+    },
+    {
+      "index": 2,
+      "id": "19ed5954-29c2-4c1d-9f6e-17c8e4daa8d2",
+      "title": "Vim \u6587\u672c\u7f16\u8f91\u5668\u5165\u95e8\u4e0e\u8fdb\u9636\u6307\u5357",
+      "is_owner": true,
+      "created_at": "2026-02-08T01:49:20"
+    },
+    {
+      "index": 3,
+      "id": "1639d00e-65ee-4b23-8094-736ed15d3246",
+      "title": "WEEK6",
+      "is_owner": true,
+      "created_at": "2026-02-03T11:42:29"
+    },
+    {
+      "index": 4,
+      "id": "e217161b-45be-444c-ac1f-07df991d7cd8",
+      "title": "Vulnerability Prompt Analysis with O3",
+      "is_owner": true,
+      "created_at": "2026-02-03T11:37:35"
+    },
+    {
+      "index": 5,
+      "id": "aae82561-2a56-412b-8786-96184baee7a1",
+      "title": "Context Rot: Understanding Degradation in AI Context Windows",
+      "is_owner": true,
+      "created_at": "2026-02-03T11:32:13"
+    },
+    {
+      "index": 6,
+      "id": "c2713371-624c-4dda-876e-8e5e8ab9140b",
+      "title": "Agentic AI Threats: Identity Spoofing and Impersonation Risks",
+      "is_owner": true,
+      "created_at": "2026-02-03T10:07:25"
+    },
+    {
+      "index": 7,
+      "id": "cb4e4bd9-08ba-41a3-8ac4-21e36adf9859",
+      "title": "Finding Vulnerabilities in Modern Web Apps Using Claude Code and OpenAI Codex",
+      "is_owner": true,
+      "created_at": "2026-02-03T09:40:14"
+    },
+    {
+      "index": 8,
+      "id": "51ca3e4a-2fbf-4fa1-a4a1-63c5d050fdb3",
+      "title": "Copilot Remote Code Execution via Prompt Injection",
+      "is_owner": true,
+      "created_at": "2026-02-03T09:38:07"
+    },
+    {
+      "index": 9,
+      "id": "58862855-7799-47dc-afbd-4948b1459820",
+      "title": "SAST vs DAST",
+      "is_owner": true,
+      "created_at": "2026-02-03T09:22:49"
+    },
+    {
+      "index": 10,
+      "id": "b3f7dd2b-dc5f-434a-9d57-785e999faf77",
+      "title": "WEEK5",
+      "is_owner": true,
+      "created_at": "2026-02-03T02:29:09"
+    },
+    {
+      "index": 11,
+      "id": "e7610787-6f29-4ae3-8a0a-65c52624177a",
+      "title": "How Warp Uses Warp to Build Warp",
+      "is_owner": true,
+      "created_at": "2026-02-03T02:19:32"
+    },
+    {
+      "index": 12,
+      "id": "3b34fa1b-dfdd-4f4c-9090-49749d15555b",
+      "title": "Warp vs Claude Code",
+      "is_owner": true,
+      "created_at": "2026-02-03T02:17:19"
+    },
+    {
+      "index": 13,
+      "id": "bde23ccd-8a4d-4719-97ee-79028e1cfa06",
+      "title": "Warp University",
+      "is_owner": true,
+      "created_at": "2026-02-03T02:13:49"
+    },
+    {
+      "index": 14,
+      "id": "1e788728-9233-4add-b2ea-d2af961123e1",
+      "title": "WEEK4",
+      "is_owner": true,
+      "created_at": "2026-02-03T02:06:19"
+    },
+    {
+      "index": 15,
+      "id": "4c055e9c-5c7b-41ca-8010-2f2f3eb51391",
+      "title": "Peeking Under the Hood of Claude Code",
+      "is_owner": true,
+      "created_at": "2026-02-03T01:59:21"
+    },
+    {
+      "index": 16,
+      "id": "4a2ca29e-223d-493b-a2d6-00df8260b3c3",
+      "title": "Good Context Good Code",
+      "is_owner": true,
+      "created_at": "2026-02-03T01:55:19"
+    },
+    {
+      "index": 17,
+      "id": "244cd016-8192-41f7-a009-394071c561d5",
+      "title": "Super Claude",
+      "is_owner": true,
+      "created_at": "2026-02-03T01:52:48"
+    },
+    {
+      "index": 18,
+      "id": "34d4da00-8c85-428d-a129-389a647ac31f",
+      "title": "Awesome Claude Agents",
+      "is_owner": true,
+      "created_at": "2026-02-03T01:51:36"
+    },
+    {
+      "index": 19,
+      "id": "bcbb022d-0eff-4c8f-a41b-dcbe7fbd4b35",
+      "title": "Claude Best Practices",
+      "is_owner": true,
+      "created_at": "2026-02-03T01:49:30"
+    },
+    {
+      "index": 20,
+      "id": "e882106c-6d41-4580-8fea-6531a145ad46",
+      "title": "Claude Code \u5185\u90e8\u5b9e\u8df5\u6848\u4f8b\u5168\u96c6",
+      "is_owner": true,
+      "created_at": "2026-02-03T01:45:06"
+    },
+    {
+      "index": 21,
+      "id": "effa7727-327e-45a7-9aef-0ac1dbee43bc",
+      "title": "WEEK 3",
+      "is_owner": true,
+      "created_at": "2026-02-02T10:01:43"
+    },
+    {
+      "index": 22,
+      "id": "e4172925-2a60-4bc4-84f2-96fc4b9c510c",
+      "title": "Writing Effective Tools for Agents",
+      "is_owner": true,
+      "created_at": "2026-02-02T09:52:44"
+    },
+    {
+      "index": 23,
+      "id": "699465cb-bbdc-45c6-96d2-23a7b74fe588",
+      "title": "How FAANG Vibe Codes",
+      "is_owner": true,
+      "created_at": "2026-02-02T09:46:59"
+    },
+    {
+      "index": 24,
+      "id": "01ec41cb-6243-4792-8586-5ef43855a2a3",
+      "title": "Getting AI to Work In Complex Codebases",
+      "is_owner": true,
+      "created_at": "2026-02-02T09:44:52"
+    },
+    {
+      "index": 25,
+      "id": "474b10c0-20e9-4c28-959e-0ea94306ab73",
+      "title": "Devin: Coding Agents 101",
+      "is_owner": true,
+      "created_at": "2026-02-02T09:41:23"
+    },
+    {
+      "index": 26,
+      "id": "8062890d-b177-4d37-bc83-afa973374f29",
+      "title": "How Long Contexts Fail",
+      "is_owner": true,
+      "created_at": "2026-02-02T09:37:57"
+    },
+    {
+      "index": 27,
+      "id": "e26f9fb0-c0ec-43a0-8825-366d5bbeced1",
+      "title": "Specs Are the New Source Code",
+      "is_owner": true,
+      "created_at": "2026-02-02T09:34:37"
+    },
+    {
+      "index": 28,
+      "id": "6cf18707-bd9f-4550-ab40-9a53582bf771",
+      "title": "WEEK2",
+      "is_owner": true,
+      "created_at": "2026-02-02T09:13:06"
+    },
+    {
+      "index": 29,
+      "id": "746fd0be-da2f-4f9d-b8b7-04b3c128e545",
+      "title": "WEEK1",
+      "is_owner": true,
+      "created_at": "2026-02-02T09:10:40"
+    },
+    {
+      "index": 30,
+      "id": "14ddce85-e04a-4797-be5c-2188b67d20c9",
+      "title": "",
+      "is_owner": true,
+      "created_at": "2026-02-02T09:06:20"
+    },
+    {
+      "index": 31,
+      "id": "7942420c-6a09-41ce-a40f-4a05330ed333",
+      "title": "MCP Food-for-Thought",
+      "is_owner": true,
+      "created_at": "2026-02-02T09:02:50"
+    },
+    {
+      "index": 32,
+      "id": "bfe2e03b-04ee-47fa-a761-6fdaad81eb7c",
+      "title": "MCP Registry",
+      "is_owner": true,
+      "created_at": "2026-02-02T01:14:20"
+    },
+    {
+      "index": 33,
+      "id": "bf3449d6-ada4-4d78-86b0-e9974acd407f",
+      "title": "MCP Server SDK",
+      "is_owner": true,
+      "created_at": "2026-02-02T01:12:52"
+    },
+    {
+      "index": 34,
+      "id": "90118f15-e48f-4d02-a743-af3cb1cb70ae",
+      "title": "MCP Server Authentication",
+      "is_owner": true,
+      "created_at": "2026-02-02T01:10:36"
+    },
+    {
+      "index": 35,
+      "id": "1cef28bc-92af-401c-aeb9-adb095db63a8",
+      "title": "Model Context Protocol \u670d\u52a1\u5668\u8d44\u6e90\u5927\u5168",
+      "is_owner": true,
+      "created_at": "2026-02-02T01:08:27"
+    },
+    {
+      "index": 36,
+      "id": "41d10dd0-d4d6-47f9-842f-b372b8aae9d6",
+      "title": "MCP Introduction",
+      "is_owner": true,
+      "created_at": "2026-02-02T01:05:30"
+    },
+    {
+      "index": 37,
+      "id": "20647183-8849-4ab4-a1d1-8ade3058e822",
+      "title": "OpenAI \u5f00\u53d1\u6548\u80fd\uff1aCodex \u5185\u90e8\u5b9e\u8df5\u6307\u5357",
+      "is_owner": true,
+      "created_at": "2026-02-02T01:03:12"
+    },
+    {
+      "index": 38,
+      "id": "df32256d-24a7-4fa6-99c6-3e9370d98a2f",
+      "title": "AI Prompt Engineering: A Deep Dive",
+      "is_owner": true,
+      "created_at": "2026-02-02T00:52:03"
+    },
+    {
+      "index": 39,
+      "id": "bf7407e3-b90d-421a-8f40-0f6f048304ec",
+      "title": "Prompt Engineering Guide",
+      "is_owner": true,
+      "created_at": "2026-02-02T00:45:13"
+    },
+    {
+      "index": 40,
+      "id": "891ebc93-a1aa-46f7-87df-7df3b8363068",
+      "title": "Google Cloud AI \u63d0\u793a\u8bcd\u5de5\u7a0b\u6307\u5357",
+      "is_owner": true,
+      "created_at": "2026-02-02T00:41:53"
+    },
+    {
+      "index": 41,
+      "id": "ba5cf498-81a2-4e06-8143-fce4fba255bb",
+      "title": "Deep Dive into LLMs like ChatGPT",
+      "is_owner": true,
+      "created_at": "2026-02-02T00:27:21"
+    },
+    {
+      "index": 42,
+      "id": "0cf14db8-671a-4671-80e3-062f8674b468",
+      "title": "\u7b2c\u4e8c\u6b21\u4e16\u754c\u5927\u6218\uff1a\u6b27\u6d32\u4e0e\u4e9a\u6d32\u7684\u9677\u9631",
+      "is_owner": true,
+      "created_at": "2026-01-01T01:43:24"
+    },
+    {
+      "index": 43,
+      "id": "fc96d67e-0115-42e4-bc5c-794f9c837f86",
+      "title": "\u300a\u6700\u7ec8\u89e3\u51b3\uff1a\u8d77\u6e90\u4e0e\u5b9e\u65bd\u300b",
+      "is_owner": true,
+      "created_at": "2026-01-01T01:39:09"
+    },
+    {
+      "index": 44,
+      "id": "92ddf15c-0081-4d0b-8ff3-83c3213614a5",
+      "title": "\u300a\u5927\u5c60\u6740\uff1a1943-1945\u53ca\u6218\u540e\u300b",
+      "is_owner": true,
+      "created_at": "2026-01-01T01:30:08"
+    },
+    {
+      "index": 45,
+      "id": "0c0283c8-1304-4c72-8154-b183800d0db6",
+      "title": "\u300a\u7b2c\u4e8c\u6b21\u4e16\u754c\u5927\u6218\u300b",
+      "is_owner": true,
+      "created_at": "2026-01-01T01:27:44"
+    },
+    {
+      "index": 46,
+      "id": "090e67a6-1c34-457b-9a06-e9800b8e379a",
+      "title": "\u300a\u6cd5\u5170\u897f\u7684\u9677\u843d\uff1a1940\u5e74\u7eb3\u7cb9\u5165\u4fb5\u300b",
+      "is_owner": true,
+      "created_at": "2025-12-31T22:20:42"
+    },
+    {
+      "index": 47,
+      "id": "ad884521-d255-433f-a07a-356926fc1b98",
+      "title": "\u300aEurope Reborn: A History, 1914-2000\u300b",
+      "is_owner": true,
+      "created_at": "2025-12-31T22:16:03"
+    },
+    {
+      "index": 48,
+      "id": "406d5c25-5f84-4afc-b376-3a053e162409",
+      "title": "\u300a\u7b2c\u4e8c\u6b21\u4e16\u754c\u5927\u6218\uff1a\u65b0\u5386\u53f2\u300b",
+      "is_owner": true,
+      "created_at": "2025-12-31T22:10:51"
+    },
+    {
+      "index": 49,
+      "id": "c063f269-cc79-4a7d-a6b7-aa017d7f1286",
+      "title": "\u300a\u5e0c\u7279\u52d2\u7684\u4e1c\u65b9\u6218\u4e89\uff0c1941-1945\uff1a\u6279\u5224\u6027\u8bc4\u4f30\u300b",
+      "is_owner": true,
+      "created_at": "2025-12-31T22:06:09"
+    },
+    {
+      "index": 50,
+      "id": "fdc36dfe-e902-450c-a2a4-b0c716ffc23e",
+      "title": "\u300a\u5927\u5c60\u6740\uff1a\u7eb3\u7cb9\u8feb\u5bb3\u4e0e\u79cd\u65cf\u706d\u7edd\u53f2\u300b",
+      "is_owner": true,
+      "created_at": "2025-12-31T22:02:06"
+    },
+    {
+      "index": 51,
+      "id": "f1635b12-7f88-47c3-8fcc-714a123f44b0",
+      "title": "\u300a\u963f\u62c9\u4f2f\u7684\u52b3\u4f26\u65af\u300b",
+      "is_owner": true,
+      "created_at": "2025-12-31T21:55:27"
+    },
+    {
+      "index": 52,
+      "id": "b12cb653-d2bc-47a6-bdc3-9d9cdb610c9b",
+      "title": "\u300a\u91ce\u86ee\u5927\u9646\u300b",
+      "is_owner": true,
+      "created_at": "2025-12-31T21:50:09"
+    },
+    {
+      "index": 53,
+      "id": "9f52737a-a8d0-4119-b029-a46d34aa7f0c",
+      "title": "\u300a\u7ea2\u96e8\uff1a\u4e00\u4e2a\u4e2d\u56fd\u53bf\u57df\u4e03\u4e2a\u4e16\u7eaa\u7684\u66b4\u529b\u53f2\u300b",
+      "is_owner": true,
+      "created_at": "2025-12-31T21:45:25"
+    },
+    {
+      "index": 54,
+      "id": "0a030d92-06c5-4030-92d9-ff27c4a8d15b",
+      "title": "\u300a\u4e2d\u56fd\u7684\u519b\u9600\u653f\u6cbb\uff1a1916\u20141928\u300b",
+      "is_owner": true,
+      "created_at": "2025-12-31T21:29:32"
+    },
+    {
+      "index": 55,
+      "id": "ffd0dab8-8fc0-4920-9185-993ce0a30add",
+      "title": "\u300a\u5dde\u53bf\u5b98\u7684\u94f6\u4e24\uff1a18\u4e16\u7eaa\u4e2d\u56fd\u7684\u5408\u7406\u5316\u8d22\u653f\u6539\u9769\u300b",
+      "is_owner": true,
+      "created_at": "2025-12-31T21:21:52"
+    },
+    {
+      "index": 56,
+      "id": "bfa45efa-7002-4f6d-99d6-ad0f8452ebda",
+      "title": "\u300a\u6c11\u56fd\u65f6\u671f\u5927\u5b66\u6821\u56ed\u6587\u5316 (1919-1937)\u300b",
+      "is_owner": true,
+      "created_at": "2025-12-31T21:17:33"
+    },
+    {
+      "index": 57,
+      "id": "cd0fe6d3-cb99-4f03-aebc-3f60fd56d6a8",
+      "title": "\u300a\u541b\u4e3b\u4e0e\u5927\u81e3\uff1a\u6e05\u4e2d\u671f\u7684\u519b\u673a\u5904\uff081723\u20141820\uff09\u300b",
+      "is_owner": true,
+      "created_at": "2025-12-31T21:14:48"
+    },
+    {
+      "index": 58,
+      "id": "e4f80a52-164d-49db-80d6-463a3ebcf5d9",
+      "title": "\u300a\u6c49\u53e3\uff1a\u4e00\u4e2a\u4e2d\u56fd\u57ce\u5e02\u7684\u5546\u4e1a\u548c\u793e\u4f1a\uff081796\u20141889\uff09\u300b",
+      "is_owner": true,
+      "created_at": "2025-12-31T21:05:15"
+    },
+    {
+      "index": 59,
+      "id": "31ce6fb2-c7a6-481b-abd4-7fba413a1848",
+      "title": "\u300a\u6e05\u671d\u5185\u4e89\u4e0e\u9e26\u7247\u6218\u4e89\u300b",
+      "is_owner": true,
+      "created_at": "2025-12-31T21:01:36"
+    },
+    {
+      "index": 60,
+      "id": "c2a4ac67-8342-4082-94c3-5b988f11e4a9",
+      "title": "\u300a\u5230\u6c11\u95f4\u53bb\uff1a\u4e2d\u56fd\u77e5\u8bc6\u5206\u5b50\u4e0e\u6c11\u95f4\u6587\u5b66\uff0c1918-1937\u300b",
+      "is_owner": true,
+      "created_at": "2025-12-31T20:58:10"
+    },
+    {
+      "index": 61,
+      "id": "2b7c229d-8683-4717-a187-720669bb1a78",
+      "title": "\u300a\u4e0a\u6d77\u7e41\u534e\u300b",
+      "is_owner": true,
+      "created_at": "2025-12-31T20:54:53"
+    },
+    {
+      "index": 62,
+      "id": "b857c4db-0378-4994-966a-f4b9b841a346",
+      "title": "\u300a\u9a6c\u4e0a\u6cbb\u5929\u4e0b\u300b",
+      "is_owner": true,
+      "created_at": "2025-12-31T20:50:35"
+    },
+    {
+      "index": 63,
+      "id": "da81388c-8336-4f4e-a37f-952b1b762cd0",
+      "title": "\u300a\u7687\u5e1d\u7684\u56db\u5e93\uff1a\u4e7e\u9686\u671d\u665a\u671f\u7684\u5b66\u8005\u4e0e\u56fd\u5bb6\u300b",
+      "is_owner": true,
+      "created_at": "2025-12-31T20:47:04"
+    },
+    {
+      "index": 64,
+      "id": "910f697f-d456-40e6-b466-755c740e4baa",
+      "title": "\u300a\u5348\u591c\u81ea\u7531\u300b",
+      "is_owner": true,
+      "created_at": "2025-12-31T20:41:10"
+    },
+    {
+      "index": 65,
+      "id": "aeee8d8d-b9b3-4866-9d48-bbd8da417b03",
+      "title": "\u7b2c\u4e8c\u6b21\u4e16\u754c\u5927\u6218\u65b0\u53f2\uff1a\u5168\u7403\u6218\u7565\u4e0e\u5730\u7f18\u683c\u5c40\u53d8\u9769",
+      "is_owner": true,
+      "created_at": "2025-12-29T13:27:22"
+    },
+    {
+      "index": 66,
+      "id": "820dc679-466c-427c-b31c-2421d8c0f66e",
+      "title": "\u5e0c\u7279\u52d2\u7684\u4e1c\u7ebf\u6218\u4e89\uff1a\u6218\u53f2\u4e0e\u8bc4\u4ef7",
+      "is_owner": true,
+      "created_at": "2025-12-29T12:08:49"
+    },
+    {
+      "index": 67,
+      "id": "667f5c43-2347-470c-9d0a-bbce6a49cdf3",
+      "title": "\u91ce\u86ee\u5927\u9646\uff1a\u6218\u540e\u6b27\u6d32\u7684\u521b\u4f24\u4e0e\u5e9f\u589f",
+      "is_owner": true,
+      "created_at": "2025-12-29T12:06:50"
+    },
+    {
+      "index": 68,
+      "id": "7a563761-8bcb-4783-9cb5-ac1b880fcb7c",
+      "title": "\u6c99\u6f20\u67ad\u96c4\u4e0e\u5927\u82f1\u5e1d\u56fd\u7684\u5229\u722a",
+      "is_owner": true,
+      "created_at": "2025-12-29T12:04:19"
+    },
+    {
+      "index": 69,
+      "id": "27e740df-370d-4d77-97ac-dea207ea2a79",
+      "title": "\u5927\u5c60\u6740\uff1a\u8d77\u6e90\u3001\u66b4\u884c\u53ca\u5176\u5386\u53f2\u9057\u4ea7",
+      "is_owner": true,
+      "created_at": "2025-12-29T12:01:38"
+    },
+    {
+      "index": 70,
+      "id": "9d078694-7fc9-4414-a7c9-725788965aca",
+      "title": "\u7ef4\u591a\u5229\u4e9a\u81f3\u8131\u6b27\uff1a\u82f1\u56fd\u5174\u8870\u53f2\u955c\u9274",
+      "is_owner": true,
+      "created_at": "2025-12-25T09:21:00"
+    },
+    {
+      "index": 71,
+      "id": "3064aaaa-9f37-4475-9f49-838209707c26",
+      "title": "\u519c\u6751\u516c\u793e\u3001\u6539\u9769\u4e0e\u9769\u547d\uff1a\u4fc4\u56fd\u73b0\u4ee3\u5316\u4e4b\u8def",
+      "is_owner": true,
+      "created_at": "2025-12-25T01:05:18"
+    },
+    {
+      "index": 72,
+      "id": "eba123fe-d3d5-4200-a441-9295f14fd7e7",
+      "title": "\u6555\u52d2\u4e0e\u67d4\u7136",
+      "is_owner": true,
+      "created_at": "2025-12-25T01:04:31"
+    },
+    {
+      "index": 73,
+      "id": "144b5695-2527-4b37-a6f3-1b469b9c1f38",
+      "title": "\u94c1\u7b3c\u4e2d\u7684\u6b27\u6d32\uff1a\u73b0\u4ee3\u5316\u3001\u6218\u4e89\u4e0e\u6c11\u4e3b",
+      "is_owner": true,
+      "created_at": "2025-12-25T00:55:39"
+    },
+    {
+      "index": 74,
+      "id": "ced0cca3-6f9f-4cf3-a979-df62efd28fb8",
+      "title": "\u6b27\u6d32 1850-1914\uff1a\u8fdb\u6b65\u4e0e\u4e0d\u786e\u5b9a\u6027",
+      "is_owner": true,
+      "created_at": "2025-12-25T00:55:05"
+    },
+    {
+      "index": 75,
+      "id": "e3236249-7e3c-43d2-a7cc-65eb0fdde4c4",
+      "title": "1937\uff1a\u65af\u5927\u6797\u6050\u6016\u7684\u4e00\u5e74",
+      "is_owner": true,
+      "created_at": "2025-12-25T00:52:35"
+    },
+    {
+      "index": 76,
+      "id": "93ee74be-f974-42ce-a07a-21bec86afaf1",
+      "title": "\u667a\u80fd\u53f0\u7403\u67dc\u81ea\u8fdb\u5316\u8fd0\u8425\u5927\u8111",
+      "is_owner": true,
+      "created_at": "2025-12-22T10:16:31"
+    },
+    {
+      "index": 77,
+      "id": "30a2316c-94b0-4c93-b2f3-71b74d7719f9",
+      "title": "\u74e6\u514b\u6709\u673a\u7845\u5149\u5b66\u8d34\u5408\u89e3\u51b3\u65b9\u6848",
+      "is_owner": true,
+      "created_at": "2025-12-09T13:12:24"
+    },
+    {
+      "index": 78,
+      "id": "adbedacd-3082-4698-b3b3-c6dbfca54cb5",
+      "title": "Generative Social ScienceStudies in Agent-Based Computational Modeling",
+      "is_owner": true,
+      "created_at": "2025-11-30T23:16:56"
+    },
+    {
+      "index": 79,
+      "id": "fc228a7f-ab1a-47e4-951d-46b954357bd3",
+      "title": "Influence and Behavior Analysis in Social Networks and Social Media",
+      "is_owner": true,
+      "created_at": "2025-11-30T22:18:44"
+    },
+    {
+      "index": 80,
+      "id": "3036a58e-5bd2-4d73-a1c8-53fc6c4d0580",
+      "title": "Networks, Crowds, and Markets Reasoning About a Highly Connected World (David Easley, Jon Kleinberg)",
+      "is_owner": true,
+      "created_at": "2025-11-30T21:29:36"
+    },
+    {
+      "index": 81,
+      "id": "c5cdd062-aac1-4b91-8642-d0f1646e19d8",
+      "title": "Models of Bounded Rationality Empirically Grounded Economic Reason, Volume 3 (Herbert Alexander Simon) (Z-Library)",
+      "is_owner": true,
+      "created_at": "2025-11-30T21:29:16"
+    },
+    {
+      "index": 82,
+      "id": "ef21325f-9015-4465-bedc-ec8424937df2",
+      "title": "Doing Computational Social Science A Practical Introduction (John McLevey) (Z-Library)",
+      "is_owner": true,
+      "created_at": "2025-11-30T20:56:36"
+    },
+    {
+      "index": 83,
+      "id": "e0a43912-2e4c-4023-929a-361b6cf6675b",
+      "title": "2820-Linear Algebra with Computer Science Applications",
+      "is_owner": true,
+      "created_at": "2025-11-30T14:58:28"
+    },
+    {
+      "index": 84,
+      "id": "c28ea590-baf6-4887-ba03-475d5c434e39",
+      "title": "\u8fd0\u7b79\u5b66\uff1a\u6a21\u578b\u4e0e\u5e94\u7528",
+      "is_owner": true,
+      "created_at": "2025-11-18T13:58:27"
+    },
+    {
+      "index": 85,
+      "id": "4cbeb522-2187-43b1-875d-305db6c3b442",
+      "title": "",
+      "is_owner": true,
+      "created_at": "2025-11-15T14:12:28"
+    },
+    {
+      "index": 86,
+      "id": "bffee993-ace0-46e8-81a4-1dffd5b9c058",
+      "title": "NL2SQL",
+      "is_owner": true,
+      "created_at": "2025-11-06T13:31:25"
+    },
+    {
+      "index": 87,
+      "id": "d8a512e1-75fe-4c78-9c7e-b457899309e8",
+      "title": "\u963f\u91cc\u5df4\u5df4\u5927\u6570\u636e\u5b9e\u8df5\uff1a\u65b9\u6cd5\u3001\u6280\u672f\u4e0e\u5e94\u7528",
+      "is_owner": true,
+      "created_at": "2025-11-06T13:07:24"
+    },
+    {
+      "index": 88,
+      "id": "e8c8f6c4-3aa9-45e9-9c43-0f3daaf30201",
+      "title": "\u6570\u636e\u4ea7\u54c1\u8bfe\u7a0b-Bilibili",
+      "is_owner": true,
+      "created_at": "2025-11-05T21:17:01"
+    },
+    {
+      "index": 89,
+      "id": "5082ec36-ae77-4973-97d0-fd48198468f2",
+      "title": "StatQuest-\u673a\u5668\u5b66\u4e60",
+      "is_owner": true,
+      "created_at": "2025-11-05T20:43:04"
+    },
+    {
+      "index": 90,
+      "id": "b1df1478-3c9f-4edd-b213-47e1e0e67637",
+      "title": "NL2SQL \u624b\u518c\u4e0e\u7efc\u8ff0",
+      "is_owner": true,
+      "created_at": "2025-11-05T14:00:22"
+    },
+    {
+      "index": 91,
+      "id": "ed34a1a8-a9bb-4592-abd9-cdf5c5942d51",
+      "title": "The SAGE Handbook of SocialMedia Research Methods",
+      "is_owner": true,
+      "created_at": "2025-11-05T01:07:28"
+    },
+    {
+      "index": 92,
+      "id": "4d6eb9b8-7d16-4ea6-b32e-13d6f94884de",
+      "title": "Neuroeconomics",
+      "is_owner": true,
+      "created_at": "2025-11-05T01:01:43"
+    },
+    {
+      "index": 93,
+      "id": "bbf8bdb4-8931-443b-ad9d-7effbd1b98fd",
+      "title": "\u795e\u7ecf\u8bed\u8a00\u6a21\u578b\u4e0e\u7279\u5f81\u5316\u6a21\u578b",
+      "is_owner": true,
+      "created_at": "2025-11-05T01:00:23"
+    },
+    {
+      "index": 94,
+      "id": "4828b90e-6912-4bf4-90e3-d8a5d407dd17",
+      "title": "CSPB 3104 Algorithms",
+      "is_owner": true,
+      "created_at": "2025-11-04T23:29:29"
+    },
+    {
+      "index": 95,
+      "id": "b4a052f7-5937-496b-8fed-72865196cdbc",
+      "title": "STATQUEST-\u903b\u8f91\u56de\u5f52\u53ca\u5176\u7edf\u8ba1\u91cf",
+      "is_owner": true,
+      "created_at": "2025-11-04T13:35:50"
+    },
+    {
+      "index": 96,
+      "id": "f1ef6f58-249e-4d2d-a056-ad31a92bfcaa",
+      "title": "Introduction to Econometrics (James H. Stock, Mark W. Watson) (\u8ba1\u91cf\u7ecf\u6d4e\u5b66)",
+      "is_owner": true,
+      "created_at": "2025-11-03T15:07:52"
+    },
+    {
+      "index": 97,
+      "id": "0bc34b11-0f60-4103-a1f1-8621b71dbae9",
+      "title": "StatQuest-\u7edf\u8ba1\u5b66\u57fa\u7840",
+      "is_owner": true,
+      "created_at": "2025-11-03T15:07:35"
+    },
+    {
+      "index": 98,
+      "id": "d1dabd74-c9a3-45ff-bb8c-4958f4645152",
+      "title": "StatQuset-\u7ebf\u6027\u6a21\u578b\u3001R \u65b9\u548c\u56de\u5f52\u5206\u6790",
+      "is_owner": true,
+      "created_at": "2025-11-03T10:53:13"
+    },
+    {
+      "index": 99,
+      "id": "f0917101-f82d-40d3-8fa4-54eab75a21f6",
+      "title": "\u6570\u636e\u5b58\u50a8\u6cbb\u7406\u4e0e\u4f18\u5316\u5b9e\u6218-BILIBILI",
+      "is_owner": true,
+      "created_at": "2025-11-03T09:56:45"
+    },
+    {
+      "index": 100,
+      "id": "dcb87883-8fff-4aae-a3a9-250f86bce696",
+      "title": "\u7f51\u7edc\u7ed3\u6784\u3001\u4e2d\u5fc3\u6027\u4e0e\u6218\u7565\u5f62\u6210",
+      "is_owner": true,
+      "created_at": "2025-11-03T09:27:05"
+    },
+    {
+      "index": 101,
+      "id": "5169d726-6b13-481e-8a51-7779dcca08b1",
+      "title": "HELLO AGENT",
+      "is_owner": true,
+      "created_at": "2025-11-02T01:36:55"
+    },
+    {
+      "index": 102,
+      "id": "f9ba3d88-17c9-4024-98ff-11be3f8522c2",
+      "title": "BIT BY BIT",
+      "is_owner": true,
+      "created_at": "2025-11-02T01:08:37"
+    },
+    {
+      "index": 103,
+      "id": "b91485df-20e0-4364-883c-85a19ab56cbc",
+      "title": "AI\u7b97\u6cd5\u4e0eAgent\u7cfb\u7edf\u4eba\u624d\u7b80\u5386\u96c6",
+      "is_owner": true,
+      "created_at": "2025-10-31T13:16:29"
+    },
+    {
+      "index": 104,
+      "id": "14fa9399-06ba-4976-b591-907a1bbd1e56",
+      "title": "HELLO-\u7b97\u6cd5",
+      "is_owner": true,
+      "created_at": "2025-10-30T13:40:22"
+    },
+    {
+      "index": 105,
+      "id": "acb14f58-145d-4c48-837d-23d1d0dd12bf",
+      "title": "Apache Doris\u6587\u6863",
+      "is_owner": true,
+      "created_at": "2025-10-30T13:12:56"
+    },
+    {
+      "index": 106,
+      "id": "7f590121-f688-4de0-b14e-ac988b2f7537",
+      "title": "Happy-LLM",
+      "is_owner": true,
+      "created_at": "2025-10-30T09:42:07"
+    },
+    {
+      "index": 107,
+      "id": "d668c9a9-2792-4659-ae7a-2dbc9427f406",
+      "title": "\u6570\u636e\u4ea7\u54c1\u7ecf\u7406\u65b0\u4eba\u5de5\u4f5c\u7b14\u8bb0",
+      "is_owner": true,
+      "created_at": "2025-10-30T09:15:00"
+    },
+    {
+      "index": 108,
+      "id": "9d198933-7bee-4ec0-a1f8-a02d91ac8494",
+      "title": "Essence of calculus 3Blue1Brown",
+      "is_owner": true,
+      "created_at": "2025-10-28T12:02:25"
+    },
+    {
+      "index": 109,
+      "id": "f1d27642-db6d-4dc3-8846-6c7e5ca4fcd8",
+      "title": "Essence of linear algebra 3Blue1Brown",
+      "is_owner": true,
+      "created_at": "2025-10-27T22:52:33"
+    },
+    {
+      "index": 110,
+      "id": "cbd3b67d-0d08-46f5-8f55-f749157452b6",
+      "title": "MSBD5020 (L1)",
+      "is_owner": true,
+      "created_at": "2025-10-27T13:45:40"
+    },
+    {
+      "index": 111,
+      "id": "f325f4e9-c251-4365-8752-327fd90965cf",
+      "title": "MSBD5017 (L1) - Introduction to Blockchain Technology",
+      "is_owner": true,
+      "created_at": "2025-10-27T13:36:11"
+    },
+    {
+      "index": 112,
+      "id": "44a74a38-73fa-47ef-b192-593604eea0ba",
+      "title": "Introduction to Computational Social Science  Principles and Applications (Cioffi-Revilla, Claudio) (\u8ba1\u7b97\u793e\u4f1a\u79d1\u5b66).pdf",
+      "is_owner": true,
+      "created_at": "2025-10-27T11:19:49"
+    },
+    {
+      "index": 113,
+      "id": "b19649af-951a-4039-b74a-b23baa226c10",
+      "title": "\u805a\u7c7b\u8bef\u5dee\u7684\u7edf\u8ba1\u63a8\u65ad",
+      "is_owner": true,
+      "created_at": "2025-10-27T11:10:46"
+    },
+    {
+      "index": 114,
+      "id": "24828725-21be-41db-be05-59026af28a3c",
+      "title": "\u6548\u5e94\u91cf\uff1aP\u503c\u4e4b\u5916\u7684\u5fc5\u9700\u54c1",
+      "is_owner": true,
+      "created_at": "2025-10-27T10:58:58"
+    },
+    {
+      "index": 115,
+      "id": "2406df87-a348-4a9f-a604-048ce94af6be",
+      "title": "\u56de\u5f52\u53ca\u5176\u4ed6\u6545\u4e8b",
+      "is_owner": true,
+      "created_at": "2025-10-27T10:57:28"
+    },
+    {
+      "index": 116,
+      "id": "6ddf9882-275c-497f-b9c7-fe93526a2a6b",
+      "title": "\u5fc3\u7406\u5b89\u5168\u4e0e\u95ee\u8d23\u5236\u5bf9\u7ec4\u7ec7\u7ee9\u6548\u7684\u5f71\u54cd",
+      "is_owner": true,
+      "created_at": "2025-10-27T10:57:14"
+    },
+    {
+      "index": 117,
+      "id": "826f1a4e-9582-42cb-910d-0bebb5ced14b",
+      "title": "\u540e\u57fa\u56e0\u7ec4\u65f6\u4ee3\u7684\u884c\u4e3a\u9057\u4f20\u5b66",
+      "is_owner": true,
+      "created_at": "2025-10-27T10:56:57"
+    },
+    {
+      "index": 118,
+      "id": "6c97a032-285e-44a2-aaae-a99ebfd6ec9e",
+      "title": "\u6559\u80b2\u795e\u7ecf\u79d1\u5b66\u7814\u7a76\u524d\u6cbf",
+      "is_owner": true,
+      "created_at": "2025-10-27T10:56:46"
+    },
+    {
+      "index": 119,
+      "id": "32def0a1-d347-4346-bbd6-52cadcc7cbc7",
+      "title": "R\u8bed\u8a00\u6570\u636e\u79d1\u5b66\u6307\u5357",
+      "is_owner": true,
+      "created_at": "2025-10-27T10:56:28"
+    },
+    {
+      "index": 120,
+      "id": "294eefe2-d4df-43bc-958c-9ed5faed7540",
+      "title": "\u7cbe\u901a Shiny: R\u8bed\u8a00\u4ea4\u4e92\u5f0f\u5e94\u7528\u5f00\u53d1",
+      "is_owner": true,
+      "created_at": "2025-10-27T10:55:49"
+    },
+    {
+      "index": 121,
+      "id": "e70f7f7c-7119-475f-b40c-007fd9c2d6d7",
+      "title": "\u5927\u8c61\uff1aUML\u9762\u5411\u5bf9\u8c61\u5206\u6790\u4e0e\u8bbe\u8ba1",
+      "is_owner": true,
+      "created_at": "2025-10-27T10:55:40"
+    },
+    {
+      "index": 122,
+      "id": "9fd1651a-c980-4515-be10-f9047a04cd29",
+      "title": "\u6570\u636e\u4ea7\u54c1\u7ecf\u7406\u7684\u81ea\u6211\u4fee\u517b",
+      "is_owner": true,
+      "created_at": "2025-10-27T10:51:49"
+    },
+    {
+      "index": 123,
+      "id": "deed2669-2b07-44c0-965f-0e575aa47b3a",
+      "title": "\u968f\u673a\u5b9e\u9a8c\u7684\u5206\u6790\u4e0e\u8bbe\u8ba1",
+      "is_owner": true,
+      "created_at": "2025-10-27T10:47:43"
+    },
+    {
+      "index": 124,
+      "id": "86bf6a3e-ba1d-4232-8722-1cbdcf7bf86c",
+      "title": "\u81ea\u52a9\u6cd5\u5bfc\u8bba",
+      "is_owner": true,
+      "created_at": "2025-10-27T10:05:53"
+    },
+    {
+      "index": 125,
+      "id": "678884d5-dab4-41e4-81b0-c35e1c6774b7",
+      "title": "\u805a\u7c7b\u8bef\u5dee\u7a33\u5065\u63a8\u65ad\u4e0e\u5e94\u7528",
+      "is_owner": true,
+      "created_at": "2025-10-27T10:01:20"
+    },
+    {
+      "index": 126,
+      "id": "ce0e8701-1c06-447a-adcb-1c2e22aca834",
+      "title": "\u5b9e\u9a8c\u7ecf\u6d4e\u5b66\u4e2d\u7684\u591a\u91cd\u5047\u8bbe\u68c0\u9a8c",
+      "is_owner": true,
+      "created_at": "2025-10-27T09:41:39"
+    },
+    {
+      "index": 127,
+      "id": "5a38190c-b8e2-403a-be70-9c9ff903efdb",
+      "title": "\u5927\u89c4\u6a21\u63a8\u65ad\u4e0e\u7ecf\u9a8c\u8d1d\u53f6\u65af\u65b9\u6cd5",
+      "is_owner": true,
+      "created_at": "2025-10-27T09:37:43"
+    },
+    {
+      "index": 128,
+      "id": "d8a425f5-8a71-4356-a5fc-617cde3b8633",
+      "title": "\u8ba1\u7b97\u673a\u65f6\u4ee3\u7684\u7edf\u8ba1\u63a8\u65ad",
+      "is_owner": true,
+      "created_at": "2025-10-27T09:33:24"
+    },
+    {
+      "index": 129,
+      "id": "6bd09351-c289-4f06-a435-ffdc2871991a",
+      "title": "\u968f\u673a\u5b9e\u9a8c\u7684\u8bbe\u8ba1\u4e0e\u7edf\u8ba1\u5206\u6790",
+      "is_owner": true,
+      "created_at": "2025-10-27T09:24:22"
+    },
+    {
+      "index": 130,
+      "id": "3a9a40c6-a566-48d0-9763-a7a5c9dce8b0",
+      "title": "\u602a\u8bde\u7ecf\u6d4e\u5b66\u7684\u9690\u85cf\u4fa7\u9762",
+      "is_owner": true,
+      "created_at": "2025-10-27T09:23:26"
+    },
+    {
+      "index": 131,
+      "id": "b869440e-7150-42cd-8394-2886a776b5e2",
+      "title": "\u56fe\u5f62\u7684\u5c42\u6b21\u8bed\u6cd5",
+      "is_owner": true,
+      "created_at": "2025-10-27T09:21:22"
+    },
+    {
+      "index": 132,
+      "id": "79c65ce5-e476-4bf1-8141-950bf5cf5cfe",
+      "title": "\u5916\u4ea4\u5b98\u50da\u673a\u6784\u4e2d\u7684\u79cd\u65cf\u6bd4\u55bb",
+      "is_owner": true,
+      "created_at": "2025-10-27T09:13:45"
+    },
+    {
+      "index": 133,
+      "id": "72b989f6-8fe9-465e-864e-7fa2affde682",
+      "title": "\u5e9f\u5f03\u7edf\u8ba1\u663e\u8457\u6027",
+      "is_owner": true,
+      "created_at": "2025-10-27T09:12:27"
+    },
+    {
+      "index": 134,
+      "id": "47b44976-ee98-467f-b944-da357720f9be",
+      "title": "\u7f8e\u56fd\u67aa\u652f\u66b4\u529b\u5730\u56fe",
+      "is_owner": true,
+      "created_at": "2025-10-27T09:12:19"
+    },
+    {
+      "index": 135,
+      "id": "d4d2e4d4-bda0-4818-9f41-1cfc73909e94",
+      "title": "\u8d6b\u5c14\u8f9b\u57fa\u5927\u5b66Java\u7f16\u7a0bMOOC\u7b80\u4ecb",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:56:15"
+    },
+    {
+      "index": 136,
+      "id": "32371430-6888-4e71-891b-a121a99961d7",
+      "title": "\u5e8f\u5217\u3001\u9012\u5f52\u548c\u5f52\u7eb3\u7684\u6574\u5408",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:55:54"
+    },
+    {
+      "index": 137,
+      "id": "482ef11a-0789-4186-b8f2-a6928db1dbc6",
+      "title": "Python\u4e2d\u7684\u6761\u4ef6\u4e0e\u5f02\u5e38\u5904\u7406",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:55:33"
+    },
+    {
+      "index": 138,
+      "id": "721470a7-6031-4ea1-a794-b214b02e905d",
+      "title": "\u6570\u636e\u79d1\u5b66\uff1a\u5b9a\u4e49\u3001\u6d41\u7a0b\u4e0e\u4ef7\u503c",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:55:09"
+    },
+    {
+      "index": 139,
+      "id": "0c660f50-8ce3-4ed6-b9be-63407327215a",
+      "title": "\u6a21\u5e42\u8fd0\u7b97\u4e0e\u5bc6\u7801\u5b66\u7406\u8bba",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:54:48"
+    },
+    {
+      "index": 140,
+      "id": "c4558ace-5c5e-4817-9492-02ab7a8d186d",
+      "title": "\u6570\u636e\u5e93\u89c6\u56fe\u64cd\u4f5c\u6307\u5357",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:53:30"
+    },
+    {
+      "index": 141,
+      "id": "748d76fd-54d0-48cc-8ff0-54054f3427bc",
+      "title": "\u76d1\u7763\u5b66\u4e60\u4e0e\u5f3a\u5316\u5b66\u4e60",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:53:01"
+    },
+    {
+      "index": 142,
+      "id": "c4b061f3-cb8e-477f-af0d-9e2f9ff17432",
+      "title": "SQL\u5fc5\u77e5\u5fc5\u4f1a\uff1a\u68c0\u7d22\u6570\u636e",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:52:16"
+    },
+    {
+      "index": 143,
+      "id": "88ed188a-d8ec-4082-8a91-721c2c42c024",
+      "title": "\u91d1\u878d\u5371\u673a\u4e0e\u5b66\u672f\u7ecf\u6d4e\u5b66\u7684\u7cfb\u7edf\u6027\u5931\u6548",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:51:40"
+    },
+    {
+      "index": 144,
+      "id": "b28c2e98-b04a-4306-b67e-4334753370a3",
+      "title": "\u7ecf\u6d4e\u5b66\u5bb6\u9519\u5728\u54ea\u91cc\uff1f",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:51:26"
+    },
+    {
+      "index": 145,
+      "id": "4b8c1979-32c5-46b8-b4f1-b40d1b3025da",
+      "title": "\u7ecf\u6d4e\u5b66\u7684\u57fa\u672c\u6311\u6218\u4e0e\u590d\u6742\u7cfb\u7edf\u65b9\u6cd5",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:50:40"
+    },
+    {
+      "index": 146,
+      "id": "bf643bf8-7ff5-469e-8fbd-4acc608af62b",
+      "title": "\u7ecf\u6d4e\u5b66\u5bb6\u5bf9\u91d1\u878d\u5371\u673a\u7684\u7cfb\u7edf\u6027\u5931\u8bef",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:50:03"
+    },
+    {
+      "index": 147,
+      "id": "ef7b7262-5364-49a3-a4b9-9ad0e1356ae7",
+      "title": "\u91d1\u878d\u5e02\u573a\u4e2d\u7684\u4f0a\u8f9b\u6a21\u578b\u4e0e\u4ee3\u7406\u4eba\u6a21\u578b",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:49:56"
+    },
+    {
+      "index": 148,
+      "id": "2611ec0c-84d4-47fe-97de-c481b1f9de5d",
+      "title": "",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:49:43"
+    },
+    {
+      "index": 149,
+      "id": "bfaf3a92-f1ac-4e1d-94bb-6b23c0f8e01b",
+      "title": "\u91d1\u878d\u5e02\u573a\u80fd\u6210\u4e3a\u4e00\u95e8\u7269\u7406\u79d1\u5b66\u5417\uff1f",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:48:33"
+    },
+    {
+      "index": 150,
+      "id": "8307d5c0-c830-4fe3-b96b-317380ccbd40",
+      "title": "\u91cf\u5316\u91d1\u878d\u5e02\u573a\u53cd\u8eab\u6027\u4e0e\u95ea\u5d29\u9884\u6d4b",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:48:12"
+    },
+    {
+      "index": 151,
+      "id": "34f93dfe-686e-4ddd-8030-8e7b5a9ccdff",
+      "title": "\u91d1\u878d\u5e02\u573a\u4e2d\u7684\u56de\u9988\u6027\u4e0e\u95ea\u5d29\u9884\u6d4b",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:47:54"
+    },
+    {
+      "index": 152,
+      "id": "f6dd1d67-2c77-4e32-b9cd-230869623379",
+      "title": "\u91d1\u878d\u7f51\u7edc\u4e2d\u7684\u7cfb\u7edf\u6027\u98ce\u9669\u4e0e\u7a33\u5b9a",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:47:22"
+    },
+    {
+      "index": 153,
+      "id": "3906ba86-821e-4b84-af8f-c03114c7f267",
+      "title": "\u94f6\u884c\u7cfb\u7edf\u98ce\u9669\u8bc4\u4f30\u4e0e\u4f20\u67d3\u6548\u5e94",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:47:03"
+    },
+    {
+      "index": 154,
+      "id": "e4298d23-83a1-4ce9-8c5e-4dc4cd51b0c9",
+      "title": "\u6bd4\u5229\u65f6\u94f6\u884c\u4f53\u7cfb\u7684\u94f6\u884c\u95f4\u98ce\u9669\u66b4\u9732\u4e0e\u7cfb\u7edf\u6027\u98ce\u9669",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:46:23"
+    },
+    {
+      "index": 155,
+      "id": "5b6ef445-d857-4eed-a607-73981474de5a",
+      "title": "\u91d1\u878d\u4f20\u67d3\uff1a\u94f6\u884c\u95f4\u5e02\u573a\u7684\u8054\u7cfb\u4e0e\u4e0d\u5b8c\u5907\u6027",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:46:00"
+    },
+    {
+      "index": 156,
+      "id": "be4f346a-e07f-41f3-85a9-3b42611b25fd",
+      "title": "\u94f6\u884c\u7cfb\u7edf\u98ce\u9669\u8bc4\u4f30\u4e0e\u4f20\u67d3\u6548\u5e94",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:45:33"
+    },
+    {
+      "index": 157,
+      "id": "4f4bf8d9-182f-45ce-8fe4-819f3d8993f3",
+      "title": "\u884c\u4e3a\u60c5\u7eea\u5728\u9650\u4ef7\u8ba2\u5355\u5e02\u573a\u4e2d\u7684\u72ec\u7279\u4f5c\u7528",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:45:12"
+    },
+    {
+      "index": 158,
+      "id": "fcf5f1ff-e6d2-4480-82c2-46f72a5a8e0c",
+      "title": "\u9ad8\u9891\u4ea4\u6613\u901f\u5ea6\u3001\u5b66\u4e60\u4e0e\u5e02\u573a\u8d28\u91cf",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:44:50"
+    },
+    {
+      "index": 159,
+      "id": "d1d67fc2-1c11-48b6-be4f-62d66395b313",
+      "title": "\u80a1\u5e02\u6d41\u52a8\u6027\u8e29\u8e0f\u5371\u673a\u7684\u5f62\u6210\u673a\u7406\u4e0e\u5e94\u5bf9\u673a\u5236",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:44:29"
+    },
+    {
+      "index": 160,
+      "id": "bd59aaa7-9b16-4fa1-9f9d-2a10e0913c2f",
+      "title": "\u884c\u4e3a\u60c5\u7eea\u4e0e\u9650\u4ef7\u8ba2\u5355\u5e02\u573a\u7279\u5f81\u4e8b\u5b9e",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:43:55"
+    },
+    {
+      "index": 161,
+      "id": "e2851b33-951e-4ad8-9d8d-e8e0d3fc2aa7",
+      "title": "\u81ea\u50ac\u5316\u96c6\u5408\uff1a\u751f\u547d\u8d77\u6e90\u4e0e\u7ecf\u6d4e",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:43:24"
+    },
+    {
+      "index": 162,
+      "id": "00a22c50-2d65-43a8-8c26-5482e2d52a1c",
+      "title": "\u7f8e\u7b2c\u5947\u5d1b\u8d77\uff1a\u4f5b\u7f57\u4f26\u8428\u7f51\u7edc\u4e0e\u56fd\u5bb6\u5efa\u6784",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:41:15"
+    },
+    {
+      "index": 163,
+      "id": "6fcc0ccc-2496-482a-933e-5bd0d5481c24",
+      "title": "\u5168\u606f\u56fe\u6cd5\u52a8\u6001\u8bc4\u4f30\u4f01\u4e1a\u98ce\u9669",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:40:53"
+    },
+    {
+      "index": 164,
+      "id": "d91799fd-df43-4a46-8f15-901723812a4a",
+      "title": "CAFE\u4fe1\u7528\u98ce\u9669\u8bc4\u4f30\u6846\u67b6\u53ca\u5176\u5728\u4e2d\u56fd\u7684\u5e94\u7528",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:40:01"
+    },
+    {
+      "index": 165,
+      "id": "a1ae5485-dba1-47d7-bfe1-74e17b92ed35",
+      "title": "\u6316\u77ff\u95f4\u9699\u535a\u5f08\u7684\u5171\u8bc6\u5747\u8861",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:39:37"
+    },
+    {
+      "index": 166,
+      "id": "e12120a7-9483-4e7c-83b7-9579a388d468",
+      "title": "\u57fa\u4e8e\u5409\u5e03\u65af\u62bd\u6837\u7684\u91d1\u878d\u98ce\u9669\u7279\u5f81\u63d0\u53d6\u65b9\u6cd5",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:38:48"
+    },
+    {
+      "index": 167,
+      "id": "1d141e91-1b8f-45cb-a38e-b4f1f088d4f4",
+      "title": "\u57fa\u91d1\u5173\u8054\u7279\u5f81\u63d0\u53d6\u7684\u968f\u673a\u641c\u7d22\u7b97\u6cd5\u4e0e\u5e94\u7528",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:38:28"
+    },
+    {
+      "index": 168,
+      "id": "889232ab-4b3e-4c52-b83f-d3a642d64caf",
+      "title": "\u4eba\u5de5\u667a\u80fd\u7b97\u6cd5\u5728\u516c\u53f8\u8d22\u52a1\u6b3a\u8bc8\u9884\u8b66\u4e2d\u7684\u5e94\u7528",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:38:08"
+    },
+    {
+      "index": 169,
+      "id": "cd55402b-bd79-41a0-ae13-1ad2e24bb437",
+      "title": "\u4eba\u5de5\u667a\u80fd\u7b97\u6cd5\u7684\u4f01\u4e1a\u8d22\u52a1\u6b3a\u8bc8\u9884\u8b66\u4e0e\u98ce\u9669\u7b5b\u9009",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:37:38"
+    },
+    {
+      "index": 170,
+      "id": "c91e26cf-84f4-4f5f-8121-838f68e356f7",
+      "title": "\u53d1\u660e\u7684\u7ed3\u6784\uff1a\u6fc0\u8fdb\u65b0\u6280\u672f\u7684\u521b\u9020\u8fc7\u7a0b",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:37:05"
+    },
+    {
+      "index": 171,
+      "id": "41093bc1-c6da-4548-9c3e-85619550660c",
+      "title": "\u8ba1\u7b97\u673a\u6a21\u578b\u4e2d\u7684\u6280\u672f\u6f14\u5316",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:36:42"
+    },
+    {
+      "index": 172,
+      "id": "a157580a-62d3-43aa-ba56-a10c0b95e52b",
+      "title": "\u6280\u672f\u7f51\u7edc\u7684\u81ea\u50ac\u5316\u521b\u65b0\u8d77\u6e90",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:36:18"
+    },
+    {
+      "index": 173,
+      "id": "1da8331d-ecd7-4793-92f6-10800a664ffb",
+      "title": "\u6280\u672f\u65b0\u9896\u6027\u6982\u51b5\u4e0e\u53d1\u660e\u672a\u6765\u5f71\u54cd",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:35:59"
+    },
+    {
+      "index": 174,
+      "id": "23be9860-f5d4-48c0-9c03-3d1f1bfc2854",
+      "title": "\u804c\u4e1a\u591a\u6837\u6027\u4e0e\u57ce\u5e02\u751f\u4ea7\u529b",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:35:42"
+    },
+    {
+      "index": 175,
+      "id": "b7e1e129-7fc7-4df8-9371-a2847a3f6ae5",
+      "title": "\u53d1\u660e\u5373\u7ec4\u5408\u8fc7\u7a0b\uff1a\u7f8e\u56fd\u4e13\u5229\u8bc1\u636e",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:35:23"
+    },
+    {
+      "index": 176,
+      "id": "14e7702e-c227-47ac-b137-b6a51a0a08e6",
+      "title": "\u81ea\u50ac\u5316\u96c6\u5408\uff1a\u4ece\u751f\u547d\u8d77\u6e90\u5230\u7ecf\u6d4e\u5b66",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:35:04"
+    },
+    {
+      "index": 177,
+      "id": "05df3779-f61e-45ec-bc69-1f494d456154",
+      "title": "\u81ea\u50ac\u5316\u96c6\u4e0e\u6280\u672f\u6f14\u5316",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:34:28"
+    },
+    {
+      "index": 178,
+      "id": "82b4aad3-6271-4be8-b27a-36a94638f127",
+      "title": "\u591a\u53d8\u91cf\u7edf\u8ba1\uff1a\u65b9\u6cd5\u548c\u5e94\u7528\u6307\u5357",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:33:03"
+    },
+    {
+      "index": 179,
+      "id": "ae5444b6-71e1-4f1c-ad28-774f61d2cb20",
+      "title": "\u601d\u7ef4\u504f\u5dee\u4e0e\u5e78\u798f\u4f53\u9a8c",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:32:26"
+    },
+    {
+      "index": 180,
+      "id": "25557ff4-ac05-43dc-a846-81ef5ad25097",
+      "title": "\u57fa\u56e0\u4e0e\u4fe1\u606f\u7684\u8fdb\u5316",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:31:40"
+    },
+    {
+      "index": 181,
+      "id": "715a4e46-48dc-44e5-a20b-678a210a8c10",
+      "title": "\u62bd\u6837\u8c03\u67e5\u4e0e\u767b\u8bb0\u7edf\u8ba1\u7684\u7ed3\u5408\u4e0e\u6bd4\u8f83",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:31:13"
+    },
+    {
+      "index": 182,
+      "id": "1f15c7a5-f4b9-4595-b176-ddb3cff3661d",
+      "title": "\u591a\u5143\u5206\u6790\u5199\u4f5c\u6307\u5357",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:30:52"
+    },
+    {
+      "index": 183,
+      "id": "76c2758b-3945-4331-81e9-a0bdea944dbd",
+      "title": "\u7edf\u8ba1\u5b66\u4e60\u5bfc\u8bba\uff1aR\u5e94\u7528\u7b2c\u4e8c\u7248",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:30:20"
+    },
+    {
+      "index": 184,
+      "id": "af9d75ba-d758-4a1f-a842-142a4eef919e",
+      "title": "\u865a\u62df\u4e16\u754c\u6c11\u65cf\u5fd7\u65b9\u6cd5",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:29:57"
+    },
+    {
+      "index": 185,
+      "id": "a9f32ea2-d53f-45d0-bb9d-adce757a9dfa",
+      "title": "\u6570\u5b57\u65f6\u4ee3\u7684\u9057\u5fd8\u7f8e\u5fb7",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:29:22"
+    },
+    {
+      "index": 186,
+      "id": "660c7f13-ca03-4a35-bf41-615c5b2712bb",
+      "title": "\u7ebf\u6027\u4ee3\u6570\u6982\u8bba\u7cbe\u8981",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:28:47"
+    },
+    {
+      "index": 187,
+      "id": "46c62825-dfe7-47b4-85ac-2fd443ce04da",
+      "title": "\u786e\u5b9a\u89c2\u5bdf\u5bf9\u8c61\u4e0e\u9009\u62e9\u504f\u5dee",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:28:10"
+    },
+    {
+      "index": 188,
+      "id": "ad6d83ca-c412-4d10-bf6d-f4484d0b424d",
+      "title": "\u4eba\u5de5\u793e\u4f1a\uff1a\u81ea\u4e0b\u800c\u4e0a\u7684\u793e\u4f1a\u79d1\u5b66",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:27:12"
+    },
+    {
+      "index": 189,
+      "id": "aeeb4650-9ccb-4491-a3b2-e7d677fb1fc5",
+      "title": "\u91d1\u878d\u7f51\u7edc\u4e0e\u4f20\u67d3",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:26:41"
+    },
+    {
+      "index": 190,
+      "id": "df014b15-78c2-4b5b-aef2-d93a423cbfd4",
+      "title": "\u751f\u6210\u793e\u4f1a\u79d1\u5b66\u4e0e\u591a\u4e3b\u4f53\u5efa\u6a21",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:26:05"
+    },
+    {
+      "index": 191,
+      "id": "4c1bc83b-8639-4b19-b809-e552834b50b0",
+      "title": "Agent_Zero: \u793e\u4f1a\u79d1\u5b66\u7684\u795e\u7ecf\u8ba4\u77e5\u57fa\u7840",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:23:20"
+    },
+    {
+      "index": 192,
+      "id": "fa568289-1a84-4872-81fd-eac6ef589c09",
+      "title": "Administrative Behavior, 4th Edition (Herbert A. Simon) (Z-Library)",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:22:45"
+    },
+    {
+      "index": 193,
+      "id": "87c7b161-492b-431f-a23e-2fab4ad11836",
+      "title": "Social and Economic Networks (Matthew O. Jackson) (Z-Library)",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:22:13"
+    },
+    {
+      "index": 194,
+      "id": "a767afbd-c94a-41af-b317-277d768d4cd1",
+      "title": "\u663e\u8457\u6027\u68c0\u9a8c\u7684\u8b66\u793a\u4e0e\u5b9e\u9a8c\u4f26\u7406",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:21:34"
+    },
+    {
+      "index": 195,
+      "id": "294d9ead-8cf4-4c22-b239-a2c82377da51",
+      "title": "\u5206\u7c7b\u56de\u5f52\u6811\uff1a\u539f\u7406\u4e0e\u5e94\u7528",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:21:11"
+    },
+    {
+      "index": 196,
+      "id": "932ea496-49a2-4926-9f35-662c8b3b477a",
+      "title": "\u7814\u7a76\u6570\u636e\u7ba1\u7406\u8d44\u6e90\u4e0e\u5de5\u5177",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:20:28"
+    },
+    {
+      "index": 197,
+      "id": "2144102a-9ec6-4bc2-be0f-99c89b8798bb",
+      "title": "MIT1801",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:19:46"
+    },
+    {
+      "index": 198,
+      "id": "ae425d15-166c-4c35-ad33-f67aa81ead80",
+      "title": "\u8ba1\u7b97\u793e\u4f1a\u79d1\u5b66\u7684\u65b9\u6cd5\u6311\u6218\u4e0e\u673a\u9047",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:18:47"
+    },
+    {
+      "index": 199,
+      "id": "252282ff-e771-45b4-9ea7-a36460421d2a",
+      "title": "\u63a8\u7279\u6570\u636e\u8d1d\u53f6\u65af\u7406\u60f3\u70b9\u4f30\u8ba1",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:18:15"
+    },
+    {
+      "index": 200,
+      "id": "c4ed20a3-3f70-41d0-8632-9c3ed1c26e33",
+      "title": "\u793e\u4ea4\u5a92\u4f53\u4e0e\u653f\u6cbb\u4e24\u6781\u5206\u5316",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:17:56"
+    },
+    {
+      "index": 201,
+      "id": "0c47e88c-4f92-4f16-9dd6-c9e857cc68d7",
+      "title": "\u793e\u4ea4\u5a92\u4f53\u6570\u5b57\u8db3\u8ff9\u9884\u6d4b\u5927\u4e94\u4eba\u683c\u7279\u8d28",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:17:25"
+    },
+    {
+      "index": 202,
+      "id": "bb2071ad-e51a-4a14-aa04-3364c9e7b1a5",
+      "title": "PS922",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:16:34"
+    },
+    {
+      "index": 203,
+      "id": "89019c20-f705-409a-ae9c-b8fb34c46b2a",
+      "title": "\u8d85\u8d8a\u7ecf\u6d4e\u4eba\uff1a\u4eba\u7c7b\u7684\u4eb2\u793e\u4f1a\u884c\u4e3a\u4e0e\u793e\u4f1a\u504f\u597d (\u53f6\u822a\uff0c\u9648\u53f6\u70fd\uff0c\u8d3e\u62e5\u6c11\u8457, \u53f6\u822a, \u9648\u53f6\u70fd, \u8d3e\u62e5\u6c11\u8457, \u53f6\u822a, \u9648\u53f6\u70fd, \u8d3e\u62e5\u6c11, \u53f6\u822a etc.) (Z-Library).pdf",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:13:54"
+    },
+    {
+      "index": 204,
+      "id": "f1523fa6-c1e2-4eb2-8eef-2182adcd671e",
+      "title": "\u6587\u672c\u5206\u6790-DACSS",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:09:04"
+    },
+    {
+      "index": 205,
+      "id": "be7432fa-67e6-426a-9216-5a5345db70cf",
+      "title": "\u503a\u52a1\u5728\u603b\u9700\u6c42\u4e2d\u7684\u4f5c\u7528",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:08:36"
+    },
+    {
+      "index": 206,
+      "id": "b4d77239-e19e-4456-bee3-819c5a18737b",
+      "title": "\u8d27\u5e01\u4e0e\u503a\u52a1\u6d41\u901a\uff1a\u8d27\u5e01\u6570\u91cf\u8bba\u7684\u91cd\u8ff0",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:08:15"
+    },
+    {
+      "index": 207,
+      "id": "25db02e1-1000-40d7-a246-4566dcee00b2",
+      "title": "\u590d\u6742\u4f53\u7ecf\u6d4e\u5b66\uff1a\u57fa\u4e8e\u4ee3\u7406\u7684\u65b0\u8303\u5f0f\u5ba3\u8a00",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:07:50"
+    },
+    {
+      "index": 208,
+      "id": "18c5b7fa-6530-47a6-a817-22672bf92296",
+      "title": "\u503a\u52a1\u5bf9\u603b\u9700\u6c42\u7684\u4f5c\u7528\u4e0e\u590d\u6742\u5b8f\u89c2\u7ecf\u6d4e\u5b66\u5ba3\u8a00",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:06:50"
+    },
+    {
+      "index": 209,
+      "id": "1ba685ff-af4b-4947-83f2-39cd871a4250",
+      "title": "\u4ece\u4eba\u5de5\u751f\u547d\u5230\u4eba\u5de5\u793e\u4f1a\uff1a\u590d\u6742\u793e\u4f1a\u7cfb\u7edf\u7814\u7a76",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:06:24"
+    },
+    {
+      "index": 210,
+      "id": "08c6ca6a-41d7-4844-b600-bae412905fab",
+      "title": "\u9f50\u592b\u3001\u5e42\u5f8b\u4e0e\u5e15\u7d2f\u6258\uff1a\u6392\u5e8f\u6559\u7a0b",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:06:03"
+    },
+    {
+      "index": 211,
+      "id": "b64e5070-cbda-4fbb-ab62-8b6725472288",
+      "title": "\u5e42\u5f8b\u5206\u5e03\u7684\u7edf\u8ba1\u6846\u67b6\u4e0e\u5b9e\u8bc1\u5206\u6790",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:05:43"
+    },
+    {
+      "index": 212,
+      "id": "75824f66-9d5f-468d-b016-144e9e07193e",
+      "title": "\u7ecf\u6d4e\u5b66\u4e2d\u7684\u5e42\u5f8b",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:05:25"
+    },
+    {
+      "index": 213,
+      "id": "4c00b9e2-8e08-4758-965a-105828e9b52a",
+      "title": "\u5e42\u5f8b\u548c\u5bf9\u6570\u6b63\u6001\u5206\u5e03\u7684\u751f\u6210\u6a21\u578b\u7b80\u53f2",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:05:07"
+    },
+    {
+      "index": 214,
+      "id": "ecec03d9-6bd1-45f8-b480-a48d3a113cf6",
+      "title": "\u9f50\u592b\u3001\u5e42\u5f8b\u4e0e\u5e15\u7d2f\u6258\uff1a\u6392\u5e8f\u6559\u7a0b",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:04:49"
+    },
+    {
+      "index": 215,
+      "id": "cbbfc26c-16c1-411b-84b9-9f2190c724ad",
+      "title": "\u884c\u4e3a\u7ecf\u6d4e\u5b66\u539f\u7406\u4e0e\u5e94\u7528",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:04:00"
+    },
+    {
+      "index": 216,
+      "id": "8f8eb1f6-d8d8-4bd1-aeea-d14ed36aec9d",
+      "title": "\u5408\u4f5c\u8fdb\u5316\u7684\u4e94\u4e2a\u6cd5\u5219\u8865\u5145\u6750\u6599",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:03:29"
+    },
+    {
+      "index": 217,
+      "id": "fc7c75df-414f-40dd-bda3-44777dabf488",
+      "title": "\u524d\u666f\u7406\u8bba: \u98ce\u9669\u51b3\u7b56\u5206\u6790",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:02:38"
+    },
+    {
+      "index": 218,
+      "id": "e26a8a30-717f-4f40-a8ea-5306f0fc4b19",
+      "title": "\u884c\u4e3a\u7ecf\u6d4e\u5b66\u539f\u7406\u4e0e\u5e94\u7528",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:00:43"
+    },
+    {
+      "index": 219,
+      "id": "952d51c7-7450-4ff9-b343-a85c3f71b8e7",
+      "title": "\u7ecf\u6d4e\u4e2d\u53cd\u8eab\u6027\u539f\u5219\u7684\u6269\u5c55\u8303\u56f4",
+      "is_owner": true,
+      "created_at": "2025-10-26T23:00:20"
+    },
+    {
+      "index": 220,
+      "id": "652fc504-c774-47d5-9dee-d784c5f1d5d1",
+      "title": "\u975e\u5747\u8861\u793e\u4f1a\u79d1\u5b66\u4e0e\u653f\u7b56",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:59:39"
+    },
+    {
+      "index": 221,
+      "id": "481e2ffb-00f8-46fe-8626-1fe3c23546ff",
+      "title": "\u7ecf\u6d4e\u4e2d\u53cd\u8eab\u6027\u539f\u5219\u7684\u6269\u5c55\u8303\u56f4",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:58:20"
+    },
+    {
+      "index": 222,
+      "id": "8246aa6f-5024-4c2c-8487-45a680b1ab52",
+      "title": "\u751f\u7269\u5f02\u901f\u751f\u957f\u7387\u6807\u5ea6\u7684\u901a\u7528\u6a21\u578b",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:57:56"
+    },
+    {
+      "index": 223,
+      "id": "af458d25-71d5-4250-8c10-c1158a188b2f",
+      "title": "\u516c\u53f8\u589e\u957f\u7684\u6807\u5ea6\u884c\u4e3a",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:57:42"
+    },
+    {
+      "index": 224,
+      "id": "01678df4-6aba-4f98-9d5c-61ad79860c08",
+      "title": "\u5409\u5e03\u62c9\u7279\u5b9a\u5f8b\uff1a\u5b9e\u8bc1\u6587\u732e\u7efc\u8ff0",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:57:20"
+    },
+    {
+      "index": 225,
+      "id": "df3feb10-a128-41c4-bd50-7c28f1143de6",
+      "title": "\u57ce\u5e02\u4e2d\u7684\u589e\u957f\u3001\u521b\u65b0\u3001\u89c4\u6a21\u4e0e\u751f\u6d3b\u8282\u594f",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:57:00"
+    },
+    {
+      "index": 226,
+      "id": "9768b080-b020-409e-88ab-ac83e27d3af8",
+      "title": "\u590d\u6742\u7cfb\u7edf\u7684\u6807\u5ea6\u884c\u4e3a",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:56:38"
+    },
+    {
+      "index": 227,
+      "id": "233766b2-fab9-44f9-8702-02a4da162b25",
+      "title": "\u793e\u4f1a\u5fc3\u7406\u5b66 (\u6234\u7ef4\u00b7\u8fc8\u5c14\u65af,David Myers,\u4faf\u7389\u6ce2,\u4e50\u56fd\u5b89,\u5f20\u667a\u52c7) (Z-Library)_compressed_compressed",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:51:02"
+    },
+    {
+      "index": 228,
+      "id": "8d97ac87-85a8-4978-a503-1e2a8ee9ac76",
+      "title": "Behavioral Economics (Edward Cartwright) (Z-Library)",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:49:13"
+    },
+    {
+      "index": 229,
+      "id": "dd3ae1ed-ea5a-43e0-b4b6-80b6bf609838",
+      "title": "Behavioral Game Theory Experiments in Strategic Interaction (Colin Camerer) (Z-Library)",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:46:53"
+    },
+    {
+      "index": 230,
+      "id": "15cfdc77-c3b6-427c-a894-c9841a62d908",
+      "title": "\u79bb\u6563\u7ed3\u6784\uff1a\u6570\u5b66",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:45:10"
+    },
+    {
+      "index": 231,
+      "id": "a35c939e-9b6d-4e78-b07c-1300fc73b791",
+      "title": "[\u8bfa\u8d1d\u5c14\u7ecf\u6d4e\u5b66\u5956\u83b7\u5f97\u8005\u4e1b\u4e66]\u884c\u4e3a\u91d1\u878d\u5b66\u65b0\u8fdb\u5c55(2) ( etc.) (Z-Library)",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:43:39"
+    },
+    {
+      "index": 232,
+      "id": "15366db4-5a70-4d7a-a360-8be47d0ac087",
+      "title": "Complexity and the Economy (W. Brian Arthur) (Z-Library)",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:40:09"
+    },
+    {
+      "index": 233,
+      "id": "f943c35d-33c0-4d5c-b420-2103d42bbc2e",
+      "title": "Increasing Returns and Path Dependence in the Economy (W. Brian Arthur) (Z-Library)",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:39:17"
+    },
+    {
+      "index": 234,
+      "id": "e7a1600e-d45e-405b-bbb4-b89ce0edd7c2",
+      "title": "\u7a7a\u95f4\u56de\u5f52\u6a21\u578b (\u5434\u6653\u521a(\u8bd1)) (Z-Library)",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:35:17"
+    },
+    {
+      "index": 235,
+      "id": "f1a937f3-f3f1-44cc-b0fa-7fba0e0f77dc",
+      "title": "\u590d\u6742\u9002\u5e94\u7cfb\u7edf \u793e\u4f1a\u751f\u6d3b\u8ba1\u7b97\u6a21\u578b\u5bfc\u8bba (\uff08\u7f8e\uff09\u7c73\u52d2\uff0c\uff08\u7f8e\uff09\u4f69\u5947\u8457\uff1b\u9686\u4e91\u6ed4\u8bd1, (\u7f8e)\u7ea6\u7ff0\u00b7H. \u7c73\u52d2(John H. Miller) etc.) (Z-Library)",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:34:32"
+    },
+    {
+      "index": 236,
+      "id": "63f7b2fc-11b4-446a-98f2-bf5f4c37ba62",
+      "title": "\u4ece\u5b58\u5728\u5230\u6f14\u5316 ([\u6bd4\u5229\u65f6]\u666e\u91cc\u6208\u91d1) (Z-Library)",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:31:25"
+    },
+    {
+      "index": 237,
+      "id": "ca410bd3-388c-4536-a776-ef83ab97acb7",
+      "title": "\u63a7\u5236\u8bba\uff1a\u6216\u5173\u4e8e\u5728\u52a8\u7269\u548c\u673a\u5668\u4e2d\u63a7\u5236\u548c\u901a\u4fe1\u7684\u79d1\u5b66 ([\u7f8e]\u7ef4\u7eb3) (",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:30:36"
+    },
+    {
+      "index": 238,
+      "id": "497a7411-4fe6-4f85-8c3b-357638d0e54e",
+      "title": "\u4fe1\u606f\u8bba\u57fa\u7840 (Thomas M. Cover,Joy A. Thomas)",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:27:26"
+    },
+    {
+      "index": 239,
+      "id": "3421120a-daf3-4b58-b5ad-d57cb503a3e0",
+      "title": "(\u683c\u81f4\u65b9\u6cd5\u00b7\u5b9a\u91cf\u7814\u7a76\u7cfb\u5217) \u6234\u7ef4\u00b7\u8bfa\u514b_ \u6768\u677e - \u793e\u4f1a\u7f51\u7edc\u5206\u6790_ \u7b2c\u4e8c\u7248-\u683c\u81f4\u51fa\u7248\u793e (2012)",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:23:58"
+    },
+    {
+      "index": 240,
+      "id": "6d8f06eb-fcf2-4136-b4fb-0a958b2f7f57",
+      "title": "\u8bf4\u670d\u7684\u7cbe\u52a0\u5de5\u53ef\u80fd\u6027\u6a21\u578b",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:17:02"
+    },
+    {
+      "index": 241,
+      "id": "c617ae53-726a-40ae-a829-b9a80026f5fc",
+      "title": "\u5854\u4f0a\u8d39\u5c14\u548c\u7279\u7eb3\u7684\u7fa4\u4f53\u95f4\u51b2\u7a81\u7406\u8bba",
+      "is_owner": true,
+      "created_at": "2025-10-26T22:16:44"
+    },
+    {
+      "index": 242,
+      "id": "28be1c1d-cb47-42be-82eb-787a4091b408",
+      "title": "The Sciences of the Artificial",
+      "is_owner": true,
+      "created_at": "2025-10-26T20:35:04"
+    },
+    {
+      "index": 243,
+      "id": "0602935d-dcf7-4999-bcc1-090a398b184f",
+      "title": "The Science of Science",
+      "is_owner": true,
+      "created_at": "2025-10-26T20:34:15"
+    },
+    {
+      "index": 244,
+      "id": "95438e6b-80b9-4f0a-9701-b8c8e053f1b0",
+      "title": "Text as Data A New Framework for Machine Learning and the Social Sciences",
+      "is_owner": true,
+      "created_at": "2025-10-26T20:33:31"
+    },
+    {
+      "index": 245,
+      "id": "9a16eb30-5b5d-4feb-96b1-6da5f0be99f2",
+      "title": "Six Degrees The Science of a Connected Age (Open Market Edition) (Duncan J. Watts)",
+      "is_owner": true,
+      "created_at": "2025-10-26T20:32:46"
+    },
+    {
+      "index": 246,
+      "id": "cbdc672b-6731-4245-90a2-bbd009313279",
+      "title": "Retooling Politics How Digital Media Are Shaping Democracy",
+      "is_owner": true,
+      "created_at": "2025-10-26T20:32:03"
+    },
+    {
+      "index": 247,
+      "id": "ee26670a-83f3-4da1-a77d-b7538f2860d3",
+      "title": "Research Exposed How Empirical Social Science Gets Done in the Digital Age (Eszter Hargittai)",
+      "is_owner": true,
+      "created_at": "2025-10-26T20:30:54"
+    },
+    {
+      "index": 248,
+      "id": "55a281f2-a16f-4583-9a48-315da576ef49",
+      "title": "Predictably Irrational The Hidden Forces That Shape Our Decisions (Dan Ariely)",
+      "is_owner": true,
+      "created_at": "2025-10-26T20:30:05"
+    },
+    {
+      "index": 249,
+      "id": "3fcb2a8a-932c-4d44-960e-c3c1831319df",
+      "title": "THE VOLT A G EFFECT",
+      "is_owner": true,
+      "created_at": "2025-10-26T20:29:15"
+    },
+    {
+      "index": 250,
+      "id": "77a465a2-1349-4121-8030-f3c655c089f7",
+      "title": "MISBEHAVING",
+      "is_owner": true,
+      "created_at": "2025-10-26T20:27:50"
+    },
+    {
+      "index": 251,
+      "id": "25081391-21a5-4616-98c2-1d1d485e7ee8",
+      "title": "HOW BEHAVIOR SPREADS",
+      "is_owner": true,
+      "created_at": "2025-10-26T20:26:32"
+    },
+    {
+      "index": 252,
+      "id": "19bde485-a9c1-4809-8884-e872b2b67b44",
+      "title": "William Shakespeare: The Complete Plays",
+      "is_owner": false,
+      "created_at": "2025-10-25T17:55:36"
+    },
+    {
+      "index": 253,
+      "id": "31c20c44-8c94-4f81-a2b8-a020a761d122",
+      "title": "How do scientists link genetics to health?",
+      "is_owner": false,
+      "created_at": "2025-10-25T17:55:23"
+    },
+    {
+      "index": 254,
+      "id": "1e5735b3-7868-44e5-927d-ad7f8d69d5ae",
+      "title": "The Science Fan's Guide To Visiting Yellowstone",
+      "is_owner": false,
+      "created_at": "2025-10-25T17:55:05"
+    }
+  ],
+  "count": 254
+}

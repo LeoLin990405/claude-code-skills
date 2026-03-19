@@ -1,0 +1,16 @@
+{
+  "doubao": {
+    "port": 9225,
+    "app_path": "/Applications/Doubao.app",
+    "page_pattern": "doubao://doubao-chat/chat",
+    "input_selector": "textarea.semi-input-textarea",
+    "app_name": "豆包"
+  },
+  "stepfun": {
+    "port": 9224,
+    "app_path": "/Applications/阶跃AI.app",
+    "page_pattern": "http://127.0.0.1:63008/chats",
+    "input_selector": "[contenteditable=\"true\"]",
+    "app_name": "阶跃AI"
+  }
+}

@@ -1,0 +1,36 @@
+[submodule "productivity/obsidian-cli"]
+	path = productivity/obsidian-cli
+	url = https://github.com/LeoLin990405/obsidian-cli-skill.git
+[submodule "research/aris"]
+	path = research/aris
+	url = https://github.com/LeoLin990405/Auto-claude-code-research-in-sleep.git
+[submodule "development/github-repo-design"]
+	path = development/github-repo-design
+	url = https://github.com/LeoLin990405/github-repo-design-skill.git
+[submodule "development/r-analytics"]
+	path = development/r-analytics
+	url = https://github.com/LeoLin990405/r-analytics-skill.git
+[submodule "documents/mineru"]
+	path = documents/mineru
+	url = https://github.com/LeoLin990405/mineru-skill.git
+[submodule "development/claude-d3js-skill"]
+	path = development/claude-d3js-skill
+	url = https://github.com/chrisvoncsefalvay/claude-d3js-skill.git
+[submodule "security/ffuf_claude_skill"]
+	path = security/ffuf_claude_skill
+	url = https://github.com/jthack/ffuf_claude_skill.git
+[submodule "development/ios-simulator-skill"]
+	path = development/ios-simulator-skill
+	url = https://github.com/conorluddy/ios-simulator-skill.git
+[submodule "development/playwright-skill"]
+	path = development/playwright-skill
+	url = https://github.com/lackeyjb/playwright-skill.git
+[submodule "ai-collaboration/superpowers"]
+	path = ai-collaboration/superpowers
+	url = https://github.com/obra/superpowers.git
+[submodule "security/trailofbits-security"]
+	path = security/trailofbits-security
+	url = https://github.com/trailofbits/skills.git
+[submodule "design/web-asset-generator"]
+	path = design/web-asset-generator
+	url = https://github.com/alonw0/web-asset-generator.git
