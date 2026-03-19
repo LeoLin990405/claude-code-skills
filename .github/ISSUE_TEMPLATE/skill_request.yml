@@ -1,0 +1,34 @@
+name: Skill Request
+description: Suggest a new skill or community skill to add
+labels: ["enhancement"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Skill Name
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What should it do?
+    validations:
+      required: true
+  - type: input
+    id: repo
+    attributes:
+      label: GitHub Repo (if existing)
+  - type: dropdown
+    id: category
+    attributes:
+      label: Category
+      options:
+        - Productivity
+        - Development
+        - Documents
+        - Research
+        - AI Collaboration
+        - Product Management
+        - Security
+        - Design
+        - System

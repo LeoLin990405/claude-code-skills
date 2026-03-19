@@ -1,0 +1,26 @@
+name: Bug Report
+description: Report an issue with a skill
+labels: ["bug"]
+body:
+  - type: input
+    id: skill
+    attributes:
+      label: Skill Name
+      placeholder: e.g., obsidian-cli
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What happened?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+  - type: input
+    id: claude-version
+    attributes:
+      label: Claude Code Version
