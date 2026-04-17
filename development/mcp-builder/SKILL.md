@@ -6,6 +6,12 @@ license: Complete terms in LICENSE.txt
 
 # MCP Server Development Guide
 
+## Bundled Templates
+
+This skill includes `templates/mcp-server-spec.md`, migrated from the legacy `claude-skills/utility` outer layer.
+
+Use it when the user needs a structured MCP server specification before or alongside implementation work.
+
 ## Overview
 
 Create MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. The quality of an MCP server is measured by how well it enables LLMs to accomplish real-world tasks.

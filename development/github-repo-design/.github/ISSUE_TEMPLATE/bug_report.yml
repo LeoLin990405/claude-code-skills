@@ -1,0 +1,43 @@
+name: Bug Report
+description: Report a bug or incorrect information in a module or template
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting an issue. Please fill out the details below.
+  - type: input
+    id: module
+    attributes:
+      label: Module or Template
+      description: Which module or template is affected?
+      placeholder: "e.g., 02-readme, ci-workflow-template"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the bug or incorrect information.
+      placeholder: Describe what is wrong and what you expected.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: How can we reproduce the issue?
+      placeholder: |
+        1. Go to module ...
+        2. Follow the instructions for ...
+        3. See error ...
+    validations:
+      required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other context, screenshots, or links.
+    validations:
+      required: false

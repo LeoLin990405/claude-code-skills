@@ -7,6 +7,12 @@ description: Create and edit JSON Canvas files (.canvas) with nodes, edges, grou
 
 This skill enables skills-compatible agents to create and edit valid JSON Canvas files (`.canvas`) used in Obsidian and other applications.
 
+## Bundled Templates
+
+This skill includes `templates/research-canvas.canvas`, migrated from the legacy `claude-skills/obsidian` outer layer.
+
+Use it when the user wants a ready-made research canvas structure instead of a blank `.canvas` file.
+
 ## Overview
 
 JSON Canvas is an open file format for infinite canvas data. Canvas files use the `.canvas` extension and contain valid JSON following the [JSON Canvas Spec 1.0](https://jsoncanvas.org/spec/1.0/).

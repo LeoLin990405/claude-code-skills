@@ -1,0 +1,110 @@
+---
+# Obsidian Bases Project Tracker
+# Place this file in your vault. Bases reads properties from notes matching the filter.
+#
+# Each tracked note should have frontmatter like:
+#   ---
+#   type: project
+#   status: In Progress
+#   priority: High
+#   due: 2026-04-01
+#   tags: [backend, Q2]
+#   owner: "@name"
+#   ---
+
+base:
+  name: Project Tracker
+  source:
+    type: folder
+    path: /Projects
+  filter:
+    operator: and
+    conditions:
+      - property: type
+        operator: is
+        value: project
+
+  columns:
+    - property: file.name
+      label: Project
+      width: 250
+
+    - property: status
+      label: Status
+      type: select
+      options:
+        - value: "Backlog"
+          color: gray
+        - value: "Planning"
+          color: blue
+        - value: "In Progress"
+          color: yellow
+        - value: "In Review"
+          color: purple
+        - value: "Done"
+          color: green
+        - value: "Blocked"
+          color: red
+
+    - property: priority
+      label: Priority
+      type: select
+      options:
+        - value: "Critical"
+          color: red
+        - value: "High"
+          color: orange
+        - value: "Medium"
+          color: yellow
+        - value: "Low"
+          color: gray
+
+    - property: due
+      label: Due Date
+      type: date
+      format: YYYY-MM-DD
+
+    - property: owner
+      label: Owner
+      type: text
+
+    - property: tags
+      label: Tags
+      type: multitext
+
+  sort:
+    - property: priority
+      order: asc
+    - property: due
+      order: asc
+
+  views:
+    - name: All Projects
+      type: table
+
+    - name: Active
+      type: table
+      filter:
+        operator: or
+        conditions:
+          - property: status
+            operator: is
+            value: "In Progress"
+          - property: status
+            operator: is
+            value: "In Review"
+
+    - name: By Status
+      type: board
+      groupBy: status
+      columnOrder:
+        - Backlog
+        - Planning
+        - In Progress
+        - In Review
+        - Done
+        - Blocked
+
+    - name: Timeline
+      type: calendar
+      dateProperty: due

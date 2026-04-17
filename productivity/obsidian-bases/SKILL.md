@@ -7,6 +7,12 @@ description: Create and edit Obsidian Bases (.base files) with views, filters, f
 
 This skill enables skills-compatible agents to create and edit valid Obsidian Bases (`.base` files) including views, filters, formulas, and all related configurations.
 
+## Bundled Templates
+
+This skill includes `templates/project-tracker.base`, migrated from the legacy `claude-skills/obsidian` outer layer.
+
+Use it as a starter when the user wants a project-tracking Base instead of building a `.base` file from scratch.
+
 ## Overview
 
 Obsidian Bases are YAML-based files that define dynamic views of notes in an Obsidian vault. A Base file can contain multiple views, global filters, formulas, property configurations, and custom summaries.

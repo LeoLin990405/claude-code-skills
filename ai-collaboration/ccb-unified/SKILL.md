@@ -70,6 +70,12 @@ ccb-unified/
 │   ├── discussion.md      # 多 AI 协作讨论（整合 all-plan）
 │   ├── stem.md            # STEM 学术建模（整合 stem-modeling）
 │   └── macro.md           # 宏观研究（整合 macro-research-ccb）
+├── references/
+│   └── patterns.md        # 多 AI 协作编排模式
+├── templates/
+│   ├── consensus-decision.md
+│   ├── parallel-review.md
+│   └── research-delegation.md
 └── examples/
     ├── async_example.sh
     ├── parallel_example.sh
@@ -78,6 +84,17 @@ ccb-unified/
     ├── stem_example.sh
     └── macro_example.sh
 ```
+
+## Legacy Orchestration Assets
+
+The legacy `claude-skills/ccb` outer-layer assets now live here:
+
+- `references/patterns.md` for orchestration patterns such as fan-out, sequential pipelines, and consensus voting
+- `templates/consensus-decision.md` for structured architecture or tooling decisions
+- `templates/parallel-review.md` for multi-provider code review
+- `templates/research-delegation.md` for specialist-routed research workflows
+
+Use these reference assets when the user needs a reusable collaboration pattern rather than a single ad-hoc prompt.
 
 ---
 

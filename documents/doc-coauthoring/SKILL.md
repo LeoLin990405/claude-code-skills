@@ -7,6 +7,19 @@ description: Guide users through a structured workflow for co-authoring document
 
 This skill provides a structured workflow for guiding users through collaborative document creation. Act as an active guide, walking users through three stages: Context Gathering, Refinement & Structure, and Reader Testing.
 
+## Bundled Templates and Workflows
+
+This skill now also carries reusable structure assets migrated from the legacy `claude-skills/office` outer layer:
+
+- `templates/meeting-notes.md`
+- `templates/proposal-structure.md`
+- `templates/report-structure.md`
+- `workflows/data-to-presentation.md`
+- `workflows/document-review-cycle.md`
+- `workflows/pdf-form-processing.md`
+
+Use these assets when the user already knows the document or workflow shape they need and would benefit from a concrete scaffold instead of starting from a blank page.
+
 ## When to Offer This Workflow
 
 **Trigger conditions:**
