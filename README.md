@@ -55,6 +55,14 @@ cd claude-code-skills && ./install.sh
 ./install.sh productivity    # Only productivity skills
 ```
 
+### Install Canonical Surface Only
+
+```bash
+./install.sh --canonical-only
+```
+
+This keeps toolkit routers and canonical skills, but skips legacy compatibility wrappers such as provider-specific CCB shims and `pm-*` aliases.
+
 ### Install a Single Skill
 
 ```bash
@@ -88,6 +96,8 @@ Category roots also expose toolkit router `SKILL.md` files migrated from the for
 - `documents/` -> document toolkit
 - `design/` -> design toolkit
 - `product-management/` -> PM toolkit
+
+Compatibility wrappers are still kept in-repo for legacy installs. If you want the smallest canonical install surface, use `./install.sh --canonical-only`.
 
 ---
 
