@@ -1,12 +1,6 @@
 [submodule "productivity/obsidian-cli"]
 	path = productivity/obsidian-cli
 	url = https://github.com/LeoLin990405/obsidian-cli-skill.git
-[submodule "research/aris"]
-	path = research/aris
-	url = https://github.com/LeoLin990405/Auto-claude-code-research-in-sleep.git
-[submodule "development/github-repo-design"]
-	path = development/github-repo-design
-	url = https://github.com/LeoLin990405/github-repo-design-skill.git
 [submodule "development/r-analytics"]
 	path = development/r-analytics
 	url = https://github.com/LeoLin990405/r-analytics-skill.git

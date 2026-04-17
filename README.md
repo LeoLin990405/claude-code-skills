@@ -6,7 +6,7 @@
 
 [![Skills](https://img.shields.io/badge/skills-60%2B-blue?style=for-the-badge)](.)
 [![Categories](https://img.shields.io/badge/categories-9-green?style=for-the-badge)](.)
-[![Submodules](https://img.shields.io/badge/submodules-12-orange?style=for-the-badge)](.)
+[![Submodules](https://img.shields.io/badge/submodules-10-orange?style=for-the-badge)](.)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 *Productivity · Development · Documents · Research · AI · PM · Security · Design · System*
@@ -27,7 +27,7 @@ claude-code-skills/            <-- this repository
 ├── productivity/        8 skills   Obsidian, GWS, NotebookLM
 ├── development/        13 skills   Playwright, D3.js, iOS, R, MCP
 ├── documents/           6 skills   PDF, DOCX, PPTX, XLSX, MinerU
-├── research/            6 skills   140+ scientific, ARIS, STEM
+├── research/            5 skills   140+ scientific, STEM, notes, macro
 ├── ai-collaboration/    5 skills   Multi-AI Gateway, Agent Teams
 ├── product-management/ 16 skills   Lenny's Podcast PM framework
 ├── security/            2 skills   Trail of Bits (50+), ffuf
@@ -100,7 +100,7 @@ git clone https://github.com/LeoLin990405/obsidian-cli-skill.git obsidian-cli
 | **[playwright-skill](development/playwright-skill)** | Browser automation and testing with Playwright | [![Submodule](https://img.shields.io/badge/↗-submodule-blue)](https://github.com/lackeyjb/playwright-skill) |
 | **[claude-d3js-skill](development/claude-d3js-skill)** | D3.js interactive data visualizations | [![Submodule](https://img.shields.io/badge/↗-submodule-blue)](https://github.com/chrisvoncsefalvay/claude-d3js-skill) |
 | **[ios-simulator-skill](development/ios-simulator-skill)** | iOS app testing and automation | [![Submodule](https://img.shields.io/badge/↗-submodule-blue)](https://github.com/conorluddy/ios-simulator-skill) |
-| **[github-repo-design](development/github-repo-design)** | GitHub repo design and README best practices | [![Submodule](https://img.shields.io/badge/↗-submodule-blue)](https://github.com/LeoLin990405/github-repo-design-skill) |
+| **[github-repo-design](development/github-repo-design)** | GitHub repo design and README best practices | `bundled` |
 | **[r-analytics](development/r-analytics)** | R language data analysis and visualization | [![Submodule](https://img.shields.io/badge/↗-submodule-blue)](https://github.com/LeoLin990405/r-analytics-skill) |
 | **[frontend-design](development/frontend-design)** | Production-grade frontend with high design quality | `bundled` |
 | **[webapp-testing](development/webapp-testing)** | Web app testing with Playwright | `bundled` |
@@ -127,7 +127,6 @@ git clone https://github.com/LeoLin990405/obsidian-cli-skill.git obsidian-cli
 | Skill | Description | Type |
 |-------|-------------|------|
 | **[claude-scientific-skills](research/claude-scientific-skills)** | 140+ scientific skills for data, bio, chem, physics | `bundled` |
-| **[aris](research/aris)** | Auto Research In Sleep -- overnight research agent | [![Submodule](https://img.shields.io/badge/↗-submodule-blue)](https://github.com/LeoLin990405/Auto-claude-code-research-in-sleep) |
 | **[stem-modeling](research/stem-modeling)** | STEM academic modeling with multi-AI collaboration | `bundled` |
 | **[history-note-processor](research/history-note-processor)** | Historical reading notes (4-step methodology) | `bundled` |
 | **[blog-writer](research/blog-writer)** | Jekyll blog posts -- bilingual, SVG diagrams | `bundled` |
@@ -199,7 +198,7 @@ All skills derived from [Lenny's Podcast](https://www.lennysnewsletter.com/) -- 
 
 ## 🔗 Submodules
 
-12 skills are linked from their upstream repositories:
+10 skills are linked from their upstream repositories:
 
 | Skill | Repository | Category |
 |-------|-----------|----------|
@@ -207,10 +206,8 @@ All skills derived from [Lenny's Podcast](https://www.lennysnewsletter.com/) -- 
 | claude-d3js-skill | [chrisvoncsefalvay/claude-d3js-skill](https://github.com/chrisvoncsefalvay/claude-d3js-skill) | Development |
 | playwright-skill | [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) | Development |
 | ios-simulator-skill | [conorluddy/ios-simulator-skill](https://github.com/conorluddy/ios-simulator-skill) | Development |
-| github-repo-design | [LeoLin990405/github-repo-design-skill](https://github.com/LeoLin990405/github-repo-design-skill) | Development |
 | r-analytics | [LeoLin990405/r-analytics-skill](https://github.com/LeoLin990405/r-analytics-skill) | Development |
 | mineru | [LeoLin990405/mineru-skill](https://github.com/LeoLin990405/mineru-skill) | Documents |
-| aris | [LeoLin990405/Auto-claude-code-research-in-sleep](https://github.com/LeoLin990405/Auto-claude-code-research-in-sleep) | Research |
 | superpowers | [obra/superpowers](https://github.com/obra/superpowers) | AI Collaboration |
 | trailofbits-security | [trailofbits/skills](https://github.com/trailofbits/skills) | Security |
 | ffuf_claude_skill | [jthack/ffuf_claude_skill](https://github.com/jthack/ffuf_claude_skill) | Security |
@@ -223,6 +220,11 @@ git submodule update --remote --merge
 # Clone with submodules
 git clone --recurse-submodules https://github.com/LeoLin990405/claude-code-skills.git
 ```
+
+Two previously external dependencies are now bundled directly in this repository:
+
+- `development/github-repo-design` is vendored to remove a self-owned submodule dependency
+- `research/aris` was removed from the catalog after its source repository was archived
 
 ---
 

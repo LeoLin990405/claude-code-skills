@@ -1,0 +1,43 @@
+name: Feature Request
+description: Suggest a new module, template, or improvement
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for your suggestion! Please describe your idea below.
+  - type: dropdown
+    id: type
+    attributes:
+      label: Request Type
+      options:
+        - New module
+        - New template
+        - Improvement to existing module
+        - Improvement to existing template
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the feature or improvement you would like.
+      placeholder: A clear description of what you want to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use Case
+      description: Why would this be useful? What problem does it solve?
+    validations:
+      required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Any other context, mockups, or references.
+    validations:
+      required: false
