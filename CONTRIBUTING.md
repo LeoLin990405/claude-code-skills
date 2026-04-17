@@ -2,6 +2,8 @@
 
 Thank you for your interest in contributing! This guide covers how to add skills, suggest community skills, and report issues.
 
+Before proposing a new submodule, vendoring an existing source repo, or changing install surface behavior, read [GOVERNANCE.md](GOVERNANCE.md) first.
+
 ## Adding a New Skill
 
 ### 1. Create the Skill Directory
@@ -55,6 +57,22 @@ If you know of an existing GitHub repo that would make a good skill:
 1. Open an issue using the **Skill Request** template
 2. Include the repo URL, a description, and which category it fits
 3. We will evaluate it for inclusion as a submodule
+
+## Repository Governance
+
+This repository distinguishes between:
+
+- bundled canonical skills
+- external submodules
+- self-owned submodules that remain independently maintained
+- legacy compatibility wrappers
+
+Use [GOVERNANCE.md](GOVERNANCE.md) for:
+
+- install profile rules
+- installable-skill counting rules
+- self-owned submodule retention criteria
+- source-repo retirement checklist
 
 ## Reporting Bugs
 

@@ -70,6 +70,8 @@ This keeps toolkit routers and canonical skills, but skips legacy compatibility 
 | Default | `./install.sh` | Canonical skills + legacy compatibility wrappers | Nothing |
 | Canonical only | `./install.sh --canonical-only` | Canonical skills + toolkit routers | Legacy CCB shims and `pm-*` wrappers |
 
+See [GOVERNANCE.md](GOVERNANCE.md) for the packaging policy behind bundled skills, submodules, compatibility wrappers, and source-repo retirement.
+
 ### Install a Single Skill
 
 ```bash
@@ -255,6 +257,8 @@ Submodule governance updates in this repository:
 - `development/r-analytics` remains a self-owned submodule because it is still treated as an independent canonical repo
 - `development/github-repo-design` is vendored to remove a self-owned submodule dependency
 - `research/aris` was removed from the catalog after its source repository was archived
+
+The longer-lived decision rules now live in [GOVERNANCE.md](GOVERNANCE.md).
 
 ---
 
