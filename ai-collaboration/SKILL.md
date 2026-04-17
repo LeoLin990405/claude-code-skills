@@ -43,3 +43,4 @@ This toolkit restores the umbrella-level coordination router that previously liv
 
 - Legacy top-level provider wrappers from the old `claude-skills/ccb` layout are preserved here as first-class skills.
 - Reusable orchestration references now live under [ccb-unified](ccb-unified/SKILL.md) and [all-plan](all-plan/SKILL.md).
+- New installs can skip these legacy wrappers with `./install.sh --canonical-only`.

@@ -67,3 +67,5 @@ Legacy `pm-*` entry points from `claude-skills/lenny` are preserved here:
 - [pm-team](pm-team/SKILL.md)
 - [pm-leadership](pm-leadership/SKILL.md)
 - [pm-playbooks](pm-playbooks/SKILL.md)
+
+If you want a smaller canonical install surface, use `./install.sh --canonical-only` to skip these compatibility wrappers.
