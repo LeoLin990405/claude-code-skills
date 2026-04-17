@@ -1,6 +1,3 @@
-[submodule "productivity/obsidian-cli"]
-	path = productivity/obsidian-cli
-	url = https://github.com/LeoLin990405/obsidian-cli-skill.git
 [submodule "development/r-analytics"]
 	path = development/r-analytics
 	url = https://github.com/LeoLin990405/r-analytics-skill.git

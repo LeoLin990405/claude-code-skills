@@ -38,4 +38,4 @@ This toolkit restores the Obsidian workflow router that previously lived in `cla
 
 - [knowledge-hub](knowledge-hub/SKILL.md) for Knowledge-Hub workflows and note operations
 - [notebooklm](notebooklm/SKILL.md) for NotebookLM notebook orchestration
-- `productivity/obsidian-cli` remains available as a submodule-backed CLI skill
+- `productivity/obsidian-cli` remains available as a bundled CLI skill
