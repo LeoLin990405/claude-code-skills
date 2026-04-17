@@ -2,9 +2,9 @@
 
 # 🧩 Claude Code Skills
 
-**A curated collection of 60+ skills for [Claude Code](https://docs.anthropic.com/en/docs/claude-code)**
+**A curated collection of 65+ skills for [Claude Code](https://docs.anthropic.com/en/docs/claude-code)**
 
-[![Skills](https://img.shields.io/badge/skills-60%2B-blue?style=for-the-badge)](.)
+[![Skills](https://img.shields.io/badge/skills-65%2B-blue?style=for-the-badge)](.)
 [![Categories](https://img.shields.io/badge/categories-9-green?style=for-the-badge)](.)
 [![Submodules](https://img.shields.io/badge/submodules-10-orange?style=for-the-badge)](.)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
@@ -24,14 +24,14 @@
     ...
 
 claude-code-skills/            <-- this repository
-├── productivity/        8 skills   Obsidian, GWS, NotebookLM
-├── development/        13 skills   Playwright, D3.js, iOS, R, MCP
-├── documents/           6 skills   PDF, DOCX, PPTX, XLSX, MinerU
+├── productivity/        9 skills   Obsidian, GWS, NotebookLM
+├── development/        14 skills   Playwright, D3.js, iOS, R, MCP
+├── documents/           7 skills   PDF, DOCX, PPTX, XLSX, MinerU
 ├── research/            5 skills   140+ scientific, STEM, notes, macro
 ├── ai-collaboration/    5 skills   Multi-AI Gateway, Agent Teams
-├── product-management/ 16 skills   Lenny's Podcast PM framework
+├── product-management/ 17 skills   Lenny's Podcast PM framework
 ├── security/            2 skills   Trail of Bits (50+), ffuf
-├── design/              7 skills   Canvas, themes, GIF, assets
+├── design/              8 skills   Canvas, themes, GIF, assets
 ├── system/              5 skills   Proxy, CDP, SVN, comms, OSS
 ├── install.sh                      Symlink installer
 ├── CONTRIBUTING.md                 Contribution guide
@@ -77,6 +77,16 @@ git clone https://github.com/LeoLin990405/obsidian-cli-skill.git obsidian-cli
 | 🔒 | [Security](#-security) | 2 | Trail of Bits (50+ skills), ffuf |
 | 🎨 | [Design](#-design) | 7 | Canvas Art, Themes, GIF Creation |
 | ⚙️ | [System](#%EF%B8%8F-system) | 5 | Proxy, CDP, SVN, Internal Comms |
+
+---
+
+Category roots also expose toolkit router `SKILL.md` files migrated from the former `claude-skills` umbrella repo:
+
+- `productivity/` -> knowledge toolkit
+- `development/` -> developer toolkit
+- `documents/` -> document toolkit
+- `design/` -> design toolkit
+- `product-management/` -> PM toolkit
 
 ---
 
