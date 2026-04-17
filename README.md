@@ -6,7 +6,7 @@
 
 [![Skills](https://img.shields.io/badge/skills-65%2B-blue?style=for-the-badge)](.)
 [![Categories](https://img.shields.io/badge/categories-9-green?style=for-the-badge)](.)
-[![Submodules](https://img.shields.io/badge/submodules-10-orange?style=for-the-badge)](.)
+[![Submodules](https://img.shields.io/badge/submodules-9-orange?style=for-the-badge)](.)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
 *Productivity · Development · Documents · Research · AI · PM · Security · Design · System*
@@ -19,7 +19,7 @@
 
 ```
 ~/.claude/skills/              <-- symlinked by install.sh
-    obsidian-cli/    -> repo/productivity/obsidian-cli   (submodule)
+    obsidian-cli/    -> repo/productivity/obsidian-cli   (bundled)
     pdf/             -> repo/documents/pdf               (bundled)
     ...
 
@@ -58,8 +58,8 @@ cd claude-code-skills && ./install.sh
 ### Install a Single Skill
 
 ```bash
-cd ~/.claude/skills
-git clone https://github.com/LeoLin990405/obsidian-cli-skill.git obsidian-cli
+git clone --recurse-submodules https://github.com/LeoLin990405/claude-code-skills.git
+ln -s "$PWD/claude-code-skills/productivity/obsidian-cli" ~/.claude/skills/obsidian-cli
 ```
 
 ---
@@ -95,7 +95,7 @@ Category roots also expose toolkit router `SKILL.md` files migrated from the for
 
 | Skill | Description | Type |
 |-------|-------------|------|
-| **[obsidian-cli](productivity/obsidian-cli)** | Obsidian vault CLI -- 80+ commands for search, tags, properties, links | [![Submodule](https://img.shields.io/badge/↗-submodule-blue)](https://github.com/LeoLin990405/obsidian-cli-skill) |
+| **[obsidian-cli](productivity/obsidian-cli)** | Obsidian vault CLI -- 80+ commands for search, tags, properties, links | `bundled` |
 | **[obsidian-markdown](productivity/obsidian-markdown)** | Obsidian Flavored Markdown -- wikilinks, callouts, embeds | `bundled` |
 | **[obsidian-bases](productivity/obsidian-bases)** | Obsidian Bases -- database views, filters, formulas | `bundled` |
 | **[json-canvas](productivity/json-canvas)** | JSON Canvas files -- nodes, edges, mind maps | `bundled` |
@@ -209,11 +209,10 @@ All skills derived from [Lenny's Podcast](https://www.lennysnewsletter.com/) -- 
 
 ## 🔗 Submodules
 
-10 skills are linked from their upstream repositories:
+9 skills are linked from their upstream repositories:
 
 | Skill | Repository | Category |
 |-------|-----------|----------|
-| obsidian-cli | [LeoLin990405/obsidian-cli-skill](https://github.com/LeoLin990405/obsidian-cli-skill) | Productivity |
 | claude-d3js-skill | [chrisvoncsefalvay/claude-d3js-skill](https://github.com/chrisvoncsefalvay/claude-d3js-skill) | Development |
 | playwright-skill | [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) | Development |
 | ios-simulator-skill | [conorluddy/ios-simulator-skill](https://github.com/conorluddy/ios-simulator-skill) | Development |
@@ -234,6 +233,7 @@ git clone --recurse-submodules https://github.com/LeoLin990405/claude-code-skill
 
 Submodule governance updates in this repository:
 
+- `productivity/obsidian-cli` is vendored to remove a self-owned submodule dependency
 - `development/github-repo-design` is vendored to remove a self-owned submodule dependency
 - `research/aris` was removed from the catalog after its source repository was archived
 
