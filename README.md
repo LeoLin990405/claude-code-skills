@@ -63,6 +63,13 @@ cd claude-code-skills && ./install.sh
 
 This keeps toolkit routers and canonical skills, but skips legacy compatibility wrappers such as provider-specific CCB shims and `pm-*` aliases.
 
+### Install Profiles
+
+| Profile | Command | Includes | Skips |
+|---|---|---|---|
+| Default | `./install.sh` | Canonical skills + legacy compatibility wrappers | Nothing |
+| Canonical only | `./install.sh --canonical-only` | Canonical skills + toolkit routers | Legacy CCB shims and `pm-*` wrappers |
+
 ### Install a Single Skill
 
 ```bash
@@ -244,6 +251,8 @@ git clone --recurse-submodules https://github.com/LeoLin990405/claude-code-skill
 Submodule governance updates in this repository:
 
 - `productivity/obsidian-cli` is vendored to remove a self-owned submodule dependency
+- `documents/mineru` remains a self-owned submodule because it still has a standalone release surface: CLI script, examples, changelog, and contributing guide
+- `development/r-analytics` remains a self-owned submodule because it is still treated as an independent canonical repo
 - `development/github-repo-design` is vendored to remove a self-owned submodule dependency
 - `research/aris` was removed from the catalog after its source repository was archived
 

@@ -4,7 +4,9 @@
 #
 # Usage:
 #   ./install.sh              Install all skills
+#   ./install.sh --canonical-only
 #   ./install.sh <category>   Install one category
+#   ./install.sh <category> --canonical-only
 #   ./install.sh --list       List available categories and skill counts
 #   ./install.sh --help       Show this help message
 
@@ -46,7 +48,7 @@ show_help() {
     echo "Categories:"
     for cat in $CATEGORIES; do
         local count
-        count=$(count_skill_dirs "$SCRIPT_DIR/$cat")
+        count=$(count_skill_dirs "$cat")
         printf "  %-25s %s skills\n" "$cat" "$count"
     done
     echo ""
@@ -56,11 +58,14 @@ show_help() {
 
 show_list() {
     echo -e "${BOLD}Available Categories${RESET}"
+    if [ "$CANONICAL_ONLY" -eq 1 ]; then
+        echo -e "Mode: ${CYAN}canonical-only${RESET}"
+    fi
     echo ""
     local total=0
     for cat in $CATEGORIES; do
         local count
-        count=$(count_skill_dirs "$SCRIPT_DIR/$cat")
+        count=$(count_skill_dirs "$cat")
         total=$((total + count))
         printf "  ${CYAN}%-25s${RESET} %2s skills\n" "$cat" "$count"
     done
@@ -69,13 +74,19 @@ show_list() {
 }
 
 count_skill_dirs() {
-    local cat_dir="$1"
+    local cat="$1"
+    local cat_dir="$SCRIPT_DIR/$cat"
     local count=0
     local skill_dir
 
     for skill_dir in "$cat_dir"/*/; do
         [ ! -d "$skill_dir" ] && continue
         [ -f "$skill_dir/SKILL.md" ] || continue
+        local name
+        name=$(basename "$skill_dir")
+        if [ "$CANONICAL_ONLY" -eq 1 ] && is_compat_skill "$cat" "$name"; then
+            continue
+        fi
         count=$((count + 1))
     done
 
@@ -108,7 +119,7 @@ install_category() {
     fi
 
     local skill_count
-    skill_count=$(count_skill_dirs "$cat_dir")
+    skill_count=$(count_skill_dirs "$cat")
     echo -e "${BLUE}${BOLD}[$cat]${RESET} ${skill_count} skills"
 
     for skill_dir in "$cat_dir"/*/; do
