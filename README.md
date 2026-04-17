@@ -82,6 +82,7 @@ git clone https://github.com/LeoLin990405/obsidian-cli-skill.git obsidian-cli
 
 Category roots also expose toolkit router `SKILL.md` files migrated from the former `claude-skills` umbrella repo:
 
+- `ai-collaboration/` -> coordination toolkit
 - `productivity/` -> knowledge toolkit
 - `development/` -> developer toolkit
 - `documents/` -> document toolkit
