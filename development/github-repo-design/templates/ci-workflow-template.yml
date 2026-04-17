@@ -1,0 +1,132 @@
+# GitHub Actions CI Workflow Template
+#
+# Usage: Copy this file to .github/workflows/ci.yml in your repository.
+# Adapt the steps for your language/framework.
+#
+# This template covers 4 stages: lint, test, build, deploy.
+# Remove or modify stages as needed.
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# Cancel in-progress runs for the same branch/PR
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  # ──────────────────────────────────────────────
+  # Stage 1: Lint
+  # ──────────────────────────────────────────────
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run lint
+      # For Python: replace with ruff check . or flake8
+      # For Go: replace with golangci-lint run
+      # For Rust: replace with cargo clippy
+
+  # ──────────────────────────────────────────────
+  # Stage 2: Test
+  # ──────────────────────────────────────────────
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    needs: lint
+    strategy:
+      matrix:
+        node-version: [18, 20, 22]
+        # For Python: python-version: ["3.10", "3.11", "3.12"]
+        # For multi-OS: os: [ubuntu-latest, macos-latest, windows-latest]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm test
+      # For Python: replace with pytest --cov
+      # For Go: replace with go test ./...
+      # For Rust: replace with cargo test
+
+      # Optional: Upload coverage
+      # - uses: codecov/codecov-action@v4
+      #   with:
+      #     token: ${{ secrets.CODECOV_TOKEN }}
+
+  # ──────────────────────────────────────────────
+  # Stage 3: Build
+  # ──────────────────────────────────────────────
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    needs: test
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+
+      # Optional: Upload build artifacts
+      # - uses: actions/upload-artifact@v4
+      #   with:
+      #     name: build
+      #     path: dist/
+      #     retention-days: 7
+
+  # ──────────────────────────────────────────────
+  # Stage 4: Deploy (only on main branch push)
+  # ──────────────────────────────────────────────
+  # Uncomment this job when you're ready for automated deploys.
+  #
+  # deploy:
+  #   name: Deploy
+  #   runs-on: ubuntu-latest
+  #   needs: build
+  #   if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+  #   environment: production
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #
+  #     - uses: actions/setup-node@v4
+  #       with:
+  #         node-version: 20
+  #         cache: npm
+  #
+  #     - run: npm ci
+  #
+  #     # npm publish (for packages)
+  #     # - run: npm publish
+  #     #   env:
+  #     #     NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+  #
+  #     # Or deploy to a hosting platform
+  #     # - run: npx vercel --prod --token=${{ secrets.VERCEL_TOKEN }}

@@ -27,6 +27,7 @@ CATEGORIES="productivity development documents research ai-collaboration product
 INSTALLED=0
 SKIPPED=0
 ALREADY_LINKED=0
+REMOVED_STALE=0
 
 show_help() {
     echo -e "${BOLD}Claude Code Skills Installer${RESET}"
@@ -94,6 +95,26 @@ install_category() {
     done
 }
 
+prune_stale_links() {
+    local target
+    for target in "$SKILLS_DIR"/*; do
+        [ ! -L "$target" ] && continue
+
+        local source
+        source=$(readlink "$target")
+
+        case "$source" in
+            "$SCRIPT_DIR"/*)
+                if [ ! -e "$source" ]; then
+                    rm "$target"
+                    echo -e "  ${YELLOW}-${RESET} $(basename "$target") (removed stale link)"
+                    REMOVED_STALE=$((REMOVED_STALE + 1))
+                fi
+                ;;
+        esac
+    done
+}
+
 # --- Main ---
 
 case "${1:-}" in
@@ -121,10 +142,15 @@ else
     done
 fi
 
+prune_stale_links
+
 echo ""
 echo -e "${BOLD}Summary${RESET}"
 echo -e "  ${GREEN}Installed:${RESET}      $INSTALLED"
 echo -e "  ${YELLOW}Already linked:${RESET} $ALREADY_LINKED"
+if [ "$REMOVED_STALE" -gt 0 ]; then
+    echo -e "  ${YELLOW}Removed stale:${RESET} $REMOVED_STALE"
+fi
 if [ "$SKIPPED" -gt 0 ]; then
     echo -e "  ${RED}Skipped:${RESET}        $SKIPPED (remove existing dirs to re-link)"
 fi

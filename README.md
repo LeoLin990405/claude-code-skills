@@ -71,7 +71,7 @@ git clone https://github.com/LeoLin990405/obsidian-cli-skill.git obsidian-cli
 | 🗂️ | [Productivity](#%EF%B8%8F-productivity) | 8 | Obsidian CLI, NotebookLM, Google Workspace |
 | 💻 | [Development](#-development) | 13 | Playwright, D3.js, iOS Simulator, R Analytics |
 | 📄 | [Documents](#-documents) | 6 | PDF, DOCX, PPTX, XLSX, MinerU |
-| 🔬 | [Research](#-research) | 6 | 140+ Scientific Skills, ARIS, STEM Modeling |
+| 🔬 | [Research](#-research) | 5 | 140+ Scientific Skills, STEM Modeling, research workflows |
 | 🤖 | [AI Collaboration](#-ai-collaboration) | 5 | Multi-AI Gateway, Agent Teams, Superpowers |
 | 📊 | [Product Management](#-product-management) | 16 | Lenny's Podcast -- 86 actionable PM skills |
 | 🔒 | [Security](#-security) | 2 | Trail of Bits (50+ skills), ffuf |
@@ -221,7 +221,7 @@ git submodule update --remote --merge
 git clone --recurse-submodules https://github.com/LeoLin990405/claude-code-skills.git
 ```
 
-Two previously external dependencies are now bundled directly in this repository:
+Submodule governance updates in this repository:
 
 - `development/github-repo-design` is vendored to remove a self-owned submodule dependency
 - `research/aris` was removed from the catalog after its source repository was archived
