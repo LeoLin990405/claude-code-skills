@@ -1,7 +1,6 @@
 <p align="center">
-  <img src="https://img.shields.io/github/license/LeoLin990405/github-repo-design-skill?style=flat-square" alt="License">
-  <img src="https://img.shields.io/github/stars/LeoLin990405/github-repo-design-skill?style=flat-square" alt="Stars">
-  <img src="https://img.shields.io/github/issues/LeoLin990405/github-repo-design-skill?style=flat-square" alt="Issues">
+  <img src="https://img.shields.io/badge/location-claude--code--skills-blue?style=flat-square" alt="Location">
+  <img src="https://img.shields.io/badge/category-development-green?style=flat-square" alt="Category">
   <img src="https://img.shields.io/badge/Claude%20Code-Skill-8A2BE2?style=flat-square&logo=anthropic&logoColor=white" alt="Claude Code Skill">
 </p>
 
@@ -10,6 +9,10 @@
 <p align="center">
   <strong>A comprehensive GitHub repository design toolkit for Claude Code</strong><br>
   <em>15 modules covering repo setup, documentation, collaboration, quality, and advanced topics</em>
+</p>
+
+<p align="center">
+  Bundled in <code>claude-code-skills/development/github-repo-design</code>
 </p>
 
 <p align="center">
@@ -43,11 +46,11 @@
 
 ## Quick Start
 
-### Install as a Claude Code Skill
+### Access in This Monorepo
 
 ```bash
 cd ~/.claude/skills
-git clone https://github.com/LeoLin990405/github-repo-design-skill.git github-repo-design
+ln -s /path/to/claude-code-skills/development/github-repo-design github-repo-design
 ```
 
 ### Usage
@@ -115,7 +118,7 @@ Module combinations by project type:
 ## Project Structure
 
 ```
-github-repo-design-skill/
+development/github-repo-design/
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
 │   │   ├── bug_report.yml
@@ -159,7 +162,7 @@ github-repo-design-skill/
 
 ## Contributing
 
-Contributions are welcome! Please read the [Contributing Guide](CONTRIBUTING.md) for details on the process for submitting pull requests, reporting bugs, and suggesting features.
+Contributions are handled through the main `claude-code-skills` repository. Please read the [Contributing Guide](CONTRIBUTING.md) for the expected process and open changes against that monorepo.
 
 ---
 

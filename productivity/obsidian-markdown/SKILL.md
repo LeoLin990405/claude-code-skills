@@ -7,6 +7,15 @@ description: Create and edit Obsidian Flavored Markdown with wikilinks, embeds, 
 
 This skill enables skills-compatible agents to create and edit valid Obsidian Flavored Markdown, including all Obsidian-specific syntax extensions.
 
+## Bundled Templates
+
+This skill includes reusable note scaffolds migrated from the legacy `claude-skills/obsidian` outer layer:
+
+- `templates/daily-note.md`
+- `templates/meeting-note.md`
+
+Use these templates when the user wants a concrete Obsidian note scaffold instead of freeform Markdown.
+
 ## Overview
 
 Obsidian uses a combination of Markdown flavors:

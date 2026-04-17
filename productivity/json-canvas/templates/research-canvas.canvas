@@ -1,0 +1,223 @@
+{
+  "nodes": [
+    {
+      "id": "topic",
+      "type": "text",
+      "x": 0,
+      "y": 0,
+      "width": 300,
+      "height": 120,
+      "color": "1",
+      "text": "# Research Topic\n\nReplace with your central research question or topic."
+    },
+    {
+      "id": "q1",
+      "type": "text",
+      "x": -500,
+      "y": -300,
+      "width": 280,
+      "height": 100,
+      "color": "4",
+      "text": "## Question 1\n\nWhat is the core problem?"
+    },
+    {
+      "id": "q2",
+      "type": "text",
+      "x": 0,
+      "y": -300,
+      "width": 280,
+      "height": 100,
+      "color": "4",
+      "text": "## Question 2\n\nWhat does the literature say?"
+    },
+    {
+      "id": "q3",
+      "type": "text",
+      "x": 500,
+      "y": -300,
+      "width": 280,
+      "height": 100,
+      "color": "4",
+      "text": "## Question 3\n\nWhat are the open gaps?"
+    },
+    {
+      "id": "s1",
+      "type": "text",
+      "x": -650,
+      "y": -550,
+      "width": 250,
+      "height": 80,
+      "color": "6",
+      "text": "### Source A\n\n[[]] — Key claim or data point"
+    },
+    {
+      "id": "s2",
+      "type": "text",
+      "x": -350,
+      "y": -550,
+      "width": 250,
+      "height": 80,
+      "color": "6",
+      "text": "### Source B\n\n[[]] — Key claim or data point"
+    },
+    {
+      "id": "s3",
+      "type": "text",
+      "x": -100,
+      "y": -550,
+      "width": 250,
+      "height": 80,
+      "color": "6",
+      "text": "### Source C\n\n[[]] — Key claim or data point"
+    },
+    {
+      "id": "s4",
+      "type": "text",
+      "x": 400,
+      "y": -550,
+      "width": 250,
+      "height": 80,
+      "color": "6",
+      "text": "### Source D\n\n[[]] — Key claim or data point"
+    },
+    {
+      "id": "f1",
+      "type": "text",
+      "x": -350,
+      "y": 250,
+      "width": 280,
+      "height": 120,
+      "color": "5",
+      "text": "## Finding 1\n\nSummarize key finding and its implications."
+    },
+    {
+      "id": "f2",
+      "type": "text",
+      "x": 0,
+      "y": 250,
+      "width": 280,
+      "height": 120,
+      "color": "5",
+      "text": "## Finding 2\n\nSummarize key finding and its implications."
+    },
+    {
+      "id": "f3",
+      "type": "text",
+      "x": 350,
+      "y": 250,
+      "width": 280,
+      "height": 120,
+      "color": "5",
+      "text": "## Finding 3\n\nSummarize key finding and its implications."
+    },
+    {
+      "id": "conclusion",
+      "type": "text",
+      "x": 0,
+      "y": 450,
+      "width": 350,
+      "height": 120,
+      "color": "3",
+      "text": "## Conclusion / Next Steps\n\nSynthesize findings and outline next actions."
+    }
+  ],
+  "edges": [
+    {
+      "id": "e-topic-q1",
+      "fromNode": "topic",
+      "fromSide": "top",
+      "toNode": "q1",
+      "toSide": "bottom",
+      "label": "asks"
+    },
+    {
+      "id": "e-topic-q2",
+      "fromNode": "topic",
+      "fromSide": "top",
+      "toNode": "q2",
+      "toSide": "bottom",
+      "label": "asks"
+    },
+    {
+      "id": "e-topic-q3",
+      "fromNode": "topic",
+      "fromSide": "top",
+      "toNode": "q3",
+      "toSide": "bottom",
+      "label": "asks"
+    },
+    {
+      "id": "e-q1-s1",
+      "fromNode": "q1",
+      "fromSide": "top",
+      "toNode": "s1",
+      "toSide": "bottom"
+    },
+    {
+      "id": "e-q1-s2",
+      "fromNode": "q1",
+      "fromSide": "top",
+      "toNode": "s2",
+      "toSide": "bottom"
+    },
+    {
+      "id": "e-q2-s3",
+      "fromNode": "q2",
+      "fromSide": "top",
+      "toNode": "s3",
+      "toSide": "bottom"
+    },
+    {
+      "id": "e-q3-s4",
+      "fromNode": "q3",
+      "fromSide": "top",
+      "toNode": "s4",
+      "toSide": "bottom"
+    },
+    {
+      "id": "e-topic-f1",
+      "fromNode": "topic",
+      "fromSide": "bottom",
+      "toNode": "f1",
+      "toSide": "top",
+      "label": "yields"
+    },
+    {
+      "id": "e-topic-f2",
+      "fromNode": "topic",
+      "fromSide": "bottom",
+      "toNode": "f2",
+      "toSide": "top",
+      "label": "yields"
+    },
+    {
+      "id": "e-topic-f3",
+      "fromNode": "topic",
+      "fromSide": "bottom",
+      "toNode": "f3",
+      "toSide": "top",
+      "label": "yields"
+    },
+    {
+      "id": "e-f1-conclusion",
+      "fromNode": "f1",
+      "fromSide": "bottom",
+      "toNode": "conclusion",
+      "toSide": "top"
+    },
+    {
+      "id": "e-f2-conclusion",
+      "fromNode": "f2",
+      "fromSide": "bottom",
+      "toNode": "conclusion",
+      "toSide": "top"
+    },
+    {
+      "id": "e-f3-conclusion",
+      "fromNode": "f3",
+      "fromSide": "bottom",
+      "toNode": "conclusion",
+      "toSide": "top"
+    }
+  ]
+}

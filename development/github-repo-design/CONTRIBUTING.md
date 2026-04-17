@@ -6,11 +6,11 @@ Thank you for your interest in contributing! This document provides guidelines a
 
 ### Reporting Bugs
 
-If you find a bug in any module or template, please open an issue using the [Bug Report](https://github.com/LeoLin990405/github-repo-design-skill/issues/new?template=bug_report.yml) template.
+If you find a bug in any module or template, please open an issue in [LeoLin990405/claude-code-skills](https://github.com/LeoLin990405/claude-code-skills/issues).
 
 ### Suggesting Features
 
-Have an idea for a new module or improvement? Open an issue using the [Feature Request](https://github.com/LeoLin990405/github-repo-design-skill/issues/new?template=feature_request.yml) template.
+Have an idea for a new module or improvement? Open an issue in [LeoLin990405/claude-code-skills](https://github.com/LeoLin990405/claude-code-skills/issues) and reference `development/github-repo-design`.
 
 ### Pull Requests
 

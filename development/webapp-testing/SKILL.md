@@ -6,6 +6,12 @@ license: Complete terms in LICENSE.txt
 
 # Web Application Testing
 
+## Bundled Templates
+
+This skill includes `templates/test-plan.md`, migrated from the legacy `claude-skills/utility` outer layer.
+
+Use it when the user needs a structured browser test plan before writing Playwright automation.
+
 To test local web applications, write native Python Playwright scripts.
 
 **Helper Scripts Available**:

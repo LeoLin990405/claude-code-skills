@@ -8,6 +8,12 @@ license: Complete terms in LICENSE.txt
 
 This skill provides guidance for creating effective skills.
 
+## Bundled Templates
+
+This skill includes `templates/skill-spec.md`, migrated from the legacy `claude-skills/utility` outer layer.
+
+Use it when the user wants to specify a new skill before generating files or running the bundled scaffolding scripts.
+
 ## About Skills
 
 Skills are modular, self-contained packages that extend Claude's capabilities by providing
