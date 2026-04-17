@@ -53,3 +53,17 @@ This toolkit restores the workflow-level PM entry point that previously lived in
 | [metrics-dashboard](templates/metrics-dashboard.md) | North-star and guardrail dashboard spec |
 | [one-on-one-template](templates/one-on-one-template.md) | Manager-report 1:1 template |
 | [retro-template](templates/retro-template.md) | Sprint, project, or incident retro |
+
+## Compatibility Wrappers
+
+Legacy `pm-*` entry points from `claude-skills/lenny` are preserved here:
+
+- [pm-discovery](pm-discovery/SKILL.md)
+- [pm-strategy](pm-strategy/SKILL.md)
+- [pm-execution](pm-execution/SKILL.md)
+- [pm-growth](pm-growth/SKILL.md)
+- [pm-analytics](pm-analytics/SKILL.md)
+- [pm-communication](pm-communication/SKILL.md)
+- [pm-team](pm-team/SKILL.md)
+- [pm-leadership](pm-leadership/SKILL.md)
+- [pm-playbooks](pm-playbooks/SKILL.md)
