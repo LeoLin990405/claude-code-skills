@@ -31,6 +31,8 @@ Implications:
 
 - directories like `templates/`, `references/`, `scripts/`, and `examples/` are support assets, not installable skills
 - `install.sh` should only count and link directories that contain `SKILL.md`
+- category roots with `SKILL.md` are installable toolkit routers and should be counted and linked by `install.sh`
+- external submodules with nested skill packs should not be flattened into the default install surface unless this repo adds an explicit router or wrapper
 - repo-level skill counts should follow the same rule as the installer
 
 ## Skill Packaging Types

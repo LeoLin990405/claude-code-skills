@@ -71,6 +71,14 @@ show_list() {
     done
     echo ""
     echo -e "  ${BOLD}Total: ${total} skills${RESET}"
+
+    local missing_submodules
+    missing_submodules=$(count_missing_submodules)
+    if [ "$missing_submodules" -gt 0 ]; then
+        echo ""
+        echo -e "${YELLOW}Note:${RESET} $missing_submodules submodule skills are not initialized. Run:"
+        echo "  git submodule update --init --recursive"
+    fi
 }
 
 count_skill_dirs() {
@@ -78,6 +86,10 @@ count_skill_dirs() {
     local cat_dir="$SCRIPT_DIR/$cat"
     local count=0
     local skill_dir
+
+    if [ -f "$cat_dir/SKILL.md" ]; then
+        count=$((count + 1))
+    fi
 
     for skill_dir in "$cat_dir"/*/; do
         [ ! -d "$skill_dir" ] && continue
@@ -93,12 +105,34 @@ count_skill_dirs() {
     echo "$count"
 }
 
+count_missing_submodules() {
+    local cat="${1:-}"
+    local count=0
+    local status
+    local path
+
+    while read -r status path _; do
+        [ -n "$path" ] || continue
+        if [ -n "$cat" ]; then
+            case "$path" in
+                "$cat"/*) ;;
+                *) continue ;;
+            esac
+        fi
+        if [ "$status" = "-" ] || [ ! -e "$SCRIPT_DIR/$path/.git" ]; then
+            count=$((count + 1))
+        fi
+    done < <(git -C "$SCRIPT_DIR" submodule status 2>/dev/null || true)
+
+    echo "$count"
+}
+
 is_compat_skill() {
     local cat="$1"
     local name="$2"
 
     case "$cat:$name" in
-        ai-collaboration:ask|ai-collaboration:cask|ai-collaboration:ccb-launcher|ai-collaboration:dask|ai-collaboration:dskask|ai-collaboration:gask|ai-collaboration:iask|ai-collaboration:kask|ai-collaboration:oask|ai-collaboration:pend|ai-collaboration:ping|ai-collaboration:qask)
+        ai-collaboration:all-plan|ai-collaboration:ask|ai-collaboration:cask|ai-collaboration:ccb-launcher|ai-collaboration:dask|ai-collaboration:dskask|ai-collaboration:gask|ai-collaboration:iask|ai-collaboration:kask|ai-collaboration:oask|ai-collaboration:pend|ai-collaboration:ping|ai-collaboration:qask)
             return 0
             ;;
         product-management:pm-analytics|product-management:pm-communication|product-management:pm-discovery|product-management:pm-execution|product-management:pm-growth|product-management:pm-leadership|product-management:pm-playbooks|product-management:pm-strategy|product-management:pm-team)
@@ -121,6 +155,27 @@ install_category() {
     local skill_count
     skill_count=$(count_skill_dirs "$cat")
     echo -e "${BLUE}${BOLD}[$cat]${RESET} ${skill_count} skills"
+
+    local missing_submodules
+    missing_submodules=$(count_missing_submodules "$cat")
+    if [ "$missing_submodules" -gt 0 ]; then
+        echo -e "  ${YELLOW}!${RESET} $missing_submodules submodule skill(s) not initialized; run git submodule update --init --recursive"
+    fi
+
+    if [ -f "$cat_dir/SKILL.md" ]; then
+        local router_target="$SKILLS_DIR/$cat"
+        if [ -L "$router_target" ]; then
+            echo -e "  ${YELLOW}~${RESET} $cat (toolkit router already linked)"
+            ALREADY_LINKED=$((ALREADY_LINKED + 1))
+        elif [ -d "$router_target" ]; then
+            echo -e "  ${RED}!${RESET} $cat (directory exists, skipping toolkit router)"
+            SKIPPED=$((SKIPPED + 1))
+        else
+            ln -s "$cat_dir" "$router_target"
+            echo -e "  ${GREEN}+${RESET} $cat (toolkit router)"
+            INSTALLED=$((INSTALLED + 1))
+        fi
+    fi
 
     for skill_dir in "$cat_dir"/*/; do
         [ ! -d "$skill_dir" ] && continue

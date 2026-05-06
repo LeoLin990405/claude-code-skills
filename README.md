@@ -24,15 +24,15 @@
     ...
 
 claude-code-skills/            <-- this repository
-├── productivity/        9 skills   Obsidian, GWS, NotebookLM
-├── development/        14 skills   Playwright, D3.js, iOS, R, MCP
-├── documents/           7 skills   PDF, DOCX, PPTX, XLSX, MinerU
-├── research/            5 skills   140+ scientific, STEM, notes, macro
-├── ai-collaboration/    5 skills   Multi-AI Gateway, Agent Teams
-├── product-management/ 17 skills   Lenny's Podcast PM framework
-├── security/            2 skills   Trail of Bits (50+), ffuf
-├── design/              8 skills   Canvas, themes, GIF, assets
-├── system/              5 skills   Proxy, CDP, SVN, comms, OSS
+├── productivity/        9 canonical installable units   Obsidian, GWS, NotebookLM
+├── development/        12 canonical installable units   D3.js, R, MCP, frontend
+├── documents/           7 canonical installable units   PDF, DOCX, PPTX, XLSX, MinerU
+├── research/            5 canonical installable units   140+ scientific, STEM, notes, macro
+├── ai-collaboration/    5 canonical installable units   Multi-AI Gateway, Agent Teams
+├── product-management/ 17 canonical installable units   Lenny's Podcast PM framework
+├── security/            0 direct installable units      External nested packs only
+├── design/              7 canonical installable units   Canvas, themes, GIF
+├── system/              5 canonical installable units   Proxy, CDP, SVN, comms, OSS
 ├── install.sh                      Symlink installer
 ├── CONTRIBUTING.md                 Contribution guide
 └── LICENSE                         MIT
@@ -61,14 +61,14 @@ cd claude-code-skills && ./install.sh
 ./install.sh --canonical-only
 ```
 
-This keeps toolkit routers and canonical skills, but skips legacy compatibility wrappers such as provider-specific CCB shims and `pm-*` aliases.
+This keeps category toolkit routers and canonical skills, but skips legacy compatibility wrappers such as `all-plan`, provider-specific CCB shims, and `pm-*` aliases.
 
 ### Install Profiles
 
 | Profile | Command | Includes | Skips |
 |---|---|---|---|
-| Default | `./install.sh` | Canonical skills + legacy compatibility wrappers | Nothing |
-| Canonical only | `./install.sh --canonical-only` | Canonical skills + toolkit routers | Legacy CCB shims and `pm-*` wrappers |
+| Default | `./install.sh` | Category toolkit routers + canonical skills + legacy compatibility wrappers | Nothing |
+| Canonical only | `./install.sh --canonical-only` | Category toolkit routers + canonical skills | Legacy CCB shims, `all-plan`, and `pm-*` wrappers |
 
 See [GOVERNANCE.md](GOVERNANCE.md) for the packaging policy behind bundled skills, submodules, compatibility wrappers, and source-repo retirement.
 
@@ -83,15 +83,17 @@ ln -s "$PWD/claude-code-skills/productivity/obsidian-cli" ~/.claude/skills/obsid
 
 ## 📦 Categories
 
-| | Category | Skills | Highlights |
+Counts below match `./install.sh --canonical-only --list`: category toolkit routers are included when present, legacy compatibility wrappers are excluded, and external nested submodule packs are not flattened into the default install surface.
+
+| | Category | Canonical Installable Units | Highlights |
 |---|---------|--------|-----------|
-| 🗂️ | [Productivity](#%EF%B8%8F-productivity) | 8 | Obsidian CLI, NotebookLM, Google Workspace |
-| 💻 | [Development](#-development) | 13 | Playwright, D3.js, iOS Simulator, R Analytics |
-| 📄 | [Documents](#-documents) | 6 | PDF, DOCX, PPTX, XLSX, MinerU |
+| 🗂️ | [Productivity](#%EF%B8%8F-productivity) | 9 | Obsidian CLI, NotebookLM, Google Workspace |
+| 💻 | [Development](#-development) | 12 | D3.js, R Analytics, MCP, frontend |
+| 📄 | [Documents](#-documents) | 7 | PDF, DOCX, PPTX, XLSX, MinerU |
 | 🔬 | [Research](#-research) | 5 | 140+ Scientific Skills, STEM Modeling, research workflows |
-| 🤖 | [AI Collaboration](#-ai-collaboration) | 5 | Multi-AI Gateway, Agent Teams, Superpowers |
-| 📊 | [Product Management](#-product-management) | 16 | Lenny's Podcast -- 86 actionable PM skills |
-| 🔒 | [Security](#-security) | 2 | Trail of Bits (50+ skills), ffuf |
+| 🤖 | [AI Collaboration](#-ai-collaboration) | 5 | Multi-AI Gateway, Agent Teams |
+| 📊 | [Product Management](#-product-management) | 17 | Lenny's Podcast -- 86 actionable PM skills |
+| 🔒 | [Security](#-security) | 0 direct / 2 external packs | Trail of Bits (50+ skills), ffuf |
 | 🎨 | [Design](#-design) | 7 | Canvas Art, Themes, GIF Creation |
 | ⚙️ | [System](#%EF%B8%8F-system) | 5 | Proxy, CDP, SVN, Internal Comms |
 
@@ -127,9 +129,9 @@ Compatibility wrappers are still kept in-repo for legacy installs. If you want t
 
 | Skill | Description | Type |
 |-------|-------------|------|
-| **[playwright-skill](development/playwright-skill)** | Browser automation and testing with Playwright | [![Submodule](https://img.shields.io/badge/↗-submodule-blue)](https://github.com/lackeyjb/playwright-skill) |
+| **[playwright-skill](development/playwright-skill)** | Browser automation and testing with Playwright | external nested pack |
 | **[claude-d3js-skill](development/claude-d3js-skill)** | D3.js interactive data visualizations | [![Submodule](https://img.shields.io/badge/↗-submodule-blue)](https://github.com/chrisvoncsefalvay/claude-d3js-skill) |
-| **[ios-simulator-skill](development/ios-simulator-skill)** | iOS app testing and automation | [![Submodule](https://img.shields.io/badge/↗-submodule-blue)](https://github.com/conorluddy/ios-simulator-skill) |
+| **[ios-simulator-skill](development/ios-simulator-skill)** | iOS app testing and automation | external nested pack |
 | **[github-repo-design](development/github-repo-design)** | GitHub repo design and README best practices | `bundled` |
 | **[r-analytics](development/r-analytics)** | R language data analysis and visualization | [![Submodule](https://img.shields.io/badge/↗-submodule-blue)](https://github.com/LeoLin990405/r-analytics-skill) |
 | **[frontend-design](development/frontend-design)** | Production-grade frontend with high design quality | `bundled` |
@@ -168,7 +170,7 @@ Compatibility wrappers are still kept in-repo for legacy installs. If you want t
 |-------|-------------|------|
 | **[ccb-unified](ai-collaboration/ccb-unified)** | 9-provider AI orchestration via Gateway API | `bundled` |
 | **[agent-teams](ai-collaboration/agent-teams)** | Multi-session Claude Code team orchestration | `bundled` |
-| **[superpowers](ai-collaboration/superpowers)** | Skill discovery and usage framework | [![Submodule](https://img.shields.io/badge/↗-submodule-blue)](https://github.com/obra/superpowers) |
+| **[superpowers](ai-collaboration/superpowers)** | Skill discovery and usage framework | external nested pack |
 | **[anthropic-docs](ai-collaboration/anthropic-docs)** | Anthropic official docs knowledge base | `bundled` |
 | **[find-skills](ai-collaboration/find-skills)** | Discover and install agent skills | `bundled` |
 
@@ -197,10 +199,12 @@ All skills derived from [Lenny's Podcast](https://www.lennysnewsletter.com/) -- 
 
 ### 🔒 Security
 
-| Skill | Description | Type |
+These external packs are kept as upstream submodules, but they do not expose root-level `SKILL.md` files at the paths below. `install.sh` therefore does not flatten them into the default skill install surface.
+
+| Pack | Description | Type |
 |-------|-------------|------|
-| **[trailofbits-security](security/trailofbits-security)** | 50+ security auditing, fuzzing, and analysis skills | [![Submodule](https://img.shields.io/badge/↗-submodule-blue)](https://github.com/trailofbits/skills) |
-| **[ffuf_claude_skill](security/ffuf_claude_skill)** | ffuf web fuzzing for penetration testing | [![Submodule](https://img.shields.io/badge/↗-submodule-blue)](https://github.com/jthack/ffuf_claude_skill) |
+| **[trailofbits-security](security/trailofbits-security)** | 50+ security auditing, fuzzing, and analysis skills | external nested pack |
+| **[ffuf_claude_skill](security/ffuf_claude_skill)** | ffuf web fuzzing for penetration testing | external nested pack |
 
 ### 🎨 Design
 
@@ -212,7 +216,7 @@ All skills derived from [Lenny's Podcast](https://www.lennysnewsletter.com/) -- 
 | **[cli-demo-gif](design/cli-demo-gif)** | CLI demo GIFs via vhs | `bundled` |
 | **[slack-gif-creator](design/slack-gif-creator)** | Animated GIFs optimized for Slack | `bundled` |
 | **[asciinema-recorder](design/asciinema-recorder)** | Terminal session recording | `bundled` |
-| **[web-asset-generator](design/web-asset-generator)** | Favicons, app icons, OG images | [![Submodule](https://img.shields.io/badge/↗-submodule-blue)](https://github.com/alonw0/web-asset-generator) |
+| **[web-asset-generator](design/web-asset-generator)** | Favicons, app icons, OG images | external nested pack |
 
 ### ⚙️ System
 
@@ -228,19 +232,19 @@ All skills derived from [Lenny's Podcast](https://www.lennysnewsletter.com/) -- 
 
 ## 🔗 Submodules
 
-9 skills are linked from their upstream repositories:
+9 upstream repositories are linked as submodules. Some expose root-level skills that `install.sh` can link directly; others are nested upstream packs that remain available in-tree without being flattened into the default install surface.
 
-| Skill | Repository | Category |
-|-------|-----------|----------|
-| claude-d3js-skill | [chrisvoncsefalvay/claude-d3js-skill](https://github.com/chrisvoncsefalvay/claude-d3js-skill) | Development |
-| playwright-skill | [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) | Development |
-| ios-simulator-skill | [conorluddy/ios-simulator-skill](https://github.com/conorluddy/ios-simulator-skill) | Development |
-| r-analytics | [LeoLin990405/r-analytics-skill](https://github.com/LeoLin990405/r-analytics-skill) | Development |
-| mineru | [LeoLin990405/mineru-skill](https://github.com/LeoLin990405/mineru-skill) | Documents |
-| superpowers | [obra/superpowers](https://github.com/obra/superpowers) | AI Collaboration |
-| trailofbits-security | [trailofbits/skills](https://github.com/trailofbits/skills) | Security |
-| ffuf_claude_skill | [jthack/ffuf_claude_skill](https://github.com/jthack/ffuf_claude_skill) | Security |
-| web-asset-generator | [alonw0/web-asset-generator](https://github.com/alonw0/web-asset-generator) | Design |
+| Pack | Repository | Category | Install Surface |
+|-------|-----------|----------|---|
+| claude-d3js-skill | [chrisvoncsefalvay/claude-d3js-skill](https://github.com/chrisvoncsefalvay/claude-d3js-skill) | Development | root skill |
+| playwright-skill | [lackeyjb/playwright-skill](https://github.com/lackeyjb/playwright-skill) | Development | nested pack |
+| ios-simulator-skill | [conorluddy/ios-simulator-skill](https://github.com/conorluddy/ios-simulator-skill) | Development | nested pack |
+| r-analytics | [LeoLin990405/r-analytics-skill](https://github.com/LeoLin990405/r-analytics-skill) | Development | root skill |
+| mineru | [LeoLin990405/mineru-skill](https://github.com/LeoLin990405/mineru-skill) | Documents | root skill |
+| superpowers | [obra/superpowers](https://github.com/obra/superpowers) | AI Collaboration | nested pack |
+| trailofbits-security | [trailofbits/skills](https://github.com/trailofbits/skills) | Security | nested pack |
+| ffuf_claude_skill | [jthack/ffuf_claude_skill](https://github.com/jthack/ffuf_claude_skill) | Security | nested pack |
+| web-asset-generator | [alonw0/web-asset-generator](https://github.com/alonw0/web-asset-generator) | Design | nested pack |
 
 ```bash
 # Update all submodules
