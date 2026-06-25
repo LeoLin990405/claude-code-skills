@@ -1,5 +1,7 @@
 <div align="center">
 
+[![English](https://img.shields.io/badge/Language-English-2ea44f?style=for-the-badge)](README.md) &nbsp; [![中文](https://img.shields.io/badge/语言-中文-555555?style=for-the-badge)](README.zh-CN.md)
+
 # 🧩 Claude Code Skills
 
 **A curated collection of 65+ skills for [Claude Code](https://docs.anthropic.com/en/docs/claude-code)**
